@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Feb 26 08:18:27 2026
+# Process ID: 17956
+# Current directory: D:/TPG-test1/MP2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18472 D:\TPG-test1\MP2\MP2.xpr
+# Log file: D:/TPG-test1/MP2/vivado.log
+# Journal file: D:/TPG-test1/MP2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/TPG-test1/MP2/MP2.xpr
+update_compile_order -fileset sources_1
+open_bd_design {D:/TPG-test1/MP2/MP2.srcs/sources_1/bd/system/system.bd}
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_run impl_1
+close_design
+set_property pfm_name {} [get_files -all {D:/TPG-test1/MP2/MP2.srcs/sources_1/bd/system/system.bd}]
+write_hw_platform -fixed -include_bit -force -file D:/TPG-test1/MP2-xsa/system_wrapper.xsa
+startgroup
+set_property -dict [list CONFIG.NUM_MI {7}] [get_bd_cells ps7_0_axi_periph]
+endgroup
+save_bd_design
+validate_bd_design
+save_bd_design
+archive_project D:/TPG-test1/MP2.xpr.zip -temp_dir D:/phjunk -force -exclude_run_results

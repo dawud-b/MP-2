@@ -1,0 +1,624 @@
+13:11:00 **** Clean-only build of configuration Debug for project ZedBoard_FMC_Pcam_Adapter_DEMO ****
+make clean 
+rm -rf  ./src/main.d  ./src/verbose/verbose.o  ./src/uart/uart_ps.o  ./src/platform/platform.o  ./src/main.o  ./src/verbose/verbose.d  ./src/uart/uart_ps.d  ./src/platform/platform.d  ZedBoard_FMC_Pcam_Adapter_DEMO.elf.size  ZedBoard_FMC_Pcam_Adapter_DEMO.elf
+ 
+13:11:00 **** Incremental Build of configuration Debug for project ZedBoard_FMC_Pcam_Adapter_DEMO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/verbose/verbose.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -I"D:\repos\Incercare2019\repo2018\ZedBoard-FMC-Pcam-Adapter-DEMO\proj\ZedBoard-FMC-Pcam-Adapter-DEMO.sdk\ZedBoard_FMC_Pcam_Adapter_DEMO\src" -c -fmessage-length=0 -MT"src/verbose/verbose.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/verbose/verbose.d" -MT"src/verbose/verbose.o" -o "src/verbose/verbose.o" "../src/verbose/verbose.c"
+Finished building: ../src/verbose/verbose.c
+ 
+Building file: ../src/uart/uart_ps.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -I"D:\repos\Incercare2019\repo2018\ZedBoard-FMC-Pcam-Adapter-DEMO\proj\ZedBoard-FMC-Pcam-Adapter-DEMO.sdk\ZedBoard_FMC_Pcam_Adapter_DEMO\src" -c -fmessage-length=0 -MT"src/uart/uart_ps.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/uart/uart_ps.d" -MT"src/uart/uart_ps.o" -o "src/uart/uart_ps.o" "../src/uart/uart_ps.c"
+Finished building: ../src/uart/uart_ps.c
+ 
+Building file: ../src/platform/platform.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -I"D:\repos\Incercare2019\repo2018\ZedBoard-FMC-Pcam-Adapter-DEMO\proj\ZedBoard-FMC-Pcam-Adapter-DEMO.sdk\ZedBoard_FMC_Pcam_Adapter_DEMO\src" -c -fmessage-length=0 -MT"src/platform/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/platform/platform.d" -MT"src/platform/platform.o" -o "src/platform/platform.o" "../src/platform/platform.c"
+Finished building: ../src/platform/platform.c
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -I"D:\repos\Incercare2019\repo2018\ZedBoard-FMC-Pcam-Adapter-DEMO\proj\ZedBoard-FMC-Pcam-Adapter-DEMO.sdk\ZedBoard_FMC_Pcam_Adapter_DEMO\src" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: ZedBoard_FMC_Pcam_Adapter_DEMO.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/lib -o "ZedBoard_FMC_Pcam_Adapter_DEMO.elf"  ./src/verbose/verbose.o  ./src/uart/uart_ps.o  ./src/platform/platform.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: ZedBoard_FMC_Pcam_Adapter_DEMO.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ZedBoard_FMC_Pcam_Adapter_DEMO.elf  |tee "ZedBoard_FMC_Pcam_Adapter_DEMO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 646254	   4344	 152684	 803282	  c41d2	ZedBoard_FMC_Pcam_Adapter_DEMO.elf
+Finished building: ZedBoard_FMC_Pcam_Adapter_DEMO.elf.size
+ 
+13:12:35 **** Incremental Build of configuration Debug for project ZedBoard_FMC_Pcam_Adapter_DEMO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+13:13:30 **** Clean-only build of configuration Debug for project ZedBoard_FMC_Pcam_Adapter_DEMO ****
+make clean 
+rm -rf  ./src/main.d  ./src/verbose/verbose.o  ./src/uart/uart_ps.o  ./src/platform/platform.o  ./src/main.o  ./src/verbose/verbose.d  ./src/uart/uart_ps.d  ./src/platform/platform.d  ZedBoard_FMC_Pcam_Adapter_DEMO.elf.size  ZedBoard_FMC_Pcam_Adapter_DEMO.elf
+ 
+13:13:30 **** Auto Build of configuration Debug for project ZedBoard_FMC_Pcam_Adapter_DEMO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/verbose/verbose.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -c -fmessage-length=0 -MT"src/verbose/verbose.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/verbose/verbose.d" -MT"src/verbose/verbose.o" -o "src/verbose/verbose.o" "../src/verbose/verbose.c"
+Finished building: ../src/verbose/verbose.c
+ 
+Building file: ../src/uart/uart_ps.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -c -fmessage-length=0 -MT"src/uart/uart_ps.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/uart/uart_ps.d" -MT"src/uart/uart_ps.o" -o "src/uart/uart_ps.o" "../src/uart/uart_ps.c"
+Finished building: ../src/uart/uart_ps.c
+ 
+Building file: ../src/platform/platform.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -c -fmessage-length=0 -MT"src/platform/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/platform/platform.d" -MT"src/platform/platform.o" -o "src/platform/platform.o" "../src/platform/platform.c"
+Finished building: ../src/platform/platform.c
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:14:
+../src/cam/PS_GPIO.h:11:10: fatal error: cam/GPIO_Client.h: No such file or directory
+ #include <cam/GPIO_Client.h>
+          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+13:13:37 **** Clean-only build of configuration Debug for project ZedBoard_FMC_Pcam_Adapter_DEMO ****
+make clean 
+rm -rf  ./src/main.d  ./src/verbose/verbose.o  ./src/uart/uart_ps.o  ./src/platform/platform.o  ./src/main.o  ./src/verbose/verbose.d  ./src/uart/uart_ps.d  ./src/platform/platform.d  ZedBoard_FMC_Pcam_Adapter_DEMO.elf.size  ZedBoard_FMC_Pcam_Adapter_DEMO.elf
+ 
+13:13:37 **** Auto Build of configuration Debug for project ZedBoard_FMC_Pcam_Adapter_DEMO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/verbose/verbose.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -c -fmessage-length=0 -MT"src/verbose/verbose.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/verbose/verbose.d" -MT"src/verbose/verbose.o" -o "src/verbose/verbose.o" "../src/verbose/verbose.c"
+Finished building: ../src/verbose/verbose.c
+ 
+Building file: ../src/uart/uart_ps.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -c -fmessage-length=0 -MT"src/uart/uart_ps.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/uart/uart_ps.d" -MT"src/uart/uart_ps.o" -o "src/uart/uart_ps.o" "../src/uart/uart_ps.c"
+Finished building: ../src/uart/uart_ps.c
+ 
+Building file: ../src/platform/platform.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -c -fmessage-length=0 -MT"src/platform/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/platform/platform.d" -MT"src/platform/platform.o" -o "src/platform/platform.o" "../src/platform/platform.c"
+Finished building: ../src/platform/platform.c
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:14:
+../src/cam/PS_GPIO.h:11:10: fatal error: cam/GPIO_Client.h: No such file or directory
+ #include <cam/GPIO_Client.h>
+          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+13:15:38 **** Clean-only build of configuration Debug for project ZedBoard_FMC_Pcam_Adapter_DEMO ****
+make clean 
+rm -rf  ./src/main.d  ./src/verbose/verbose.o  ./src/uart/uart_ps.o  ./src/platform/platform.o  ./src/main.o  ./src/verbose/verbose.d  ./src/uart/uart_ps.d  ./src/platform/platform.d  ZedBoard_FMC_Pcam_Adapter_DEMO.elf.size  ZedBoard_FMC_Pcam_Adapter_DEMO.elf
+ 
+13:15:38 **** Auto Build of configuration Debug for project ZedBoard_FMC_Pcam_Adapter_DEMO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/verbose/verbose.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -I"D:\repos\Incercare2019\repo2018\ZedBoard-FMC-Pcam-Adapter-DEMO\proj\ZedBoard-FMC-Pcam-Adapter-DEMO.sdk\ZedBoard_FMC_Pcam_Adapter_DEMO\src" -c -fmessage-length=0 -MT"src/verbose/verbose.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/verbose/verbose.d" -MT"src/verbose/verbose.o" -o "src/verbose/verbose.o" "../src/verbose/verbose.c"
+Finished building: ../src/verbose/verbose.c
+ 
+Building file: ../src/uart/uart_ps.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -I"D:\repos\Incercare2019\repo2018\ZedBoard-FMC-Pcam-Adapter-DEMO\proj\ZedBoard-FMC-Pcam-Adapter-DEMO.sdk\ZedBoard_FMC_Pcam_Adapter_DEMO\src" -c -fmessage-length=0 -MT"src/uart/uart_ps.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/uart/uart_ps.d" -MT"src/uart/uart_ps.o" -o "src/uart/uart_ps.o" "../src/uart/uart_ps.c"
+Finished building: ../src/uart/uart_ps.c
+ 
+Building file: ../src/platform/platform.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -I"D:\repos\Incercare2019\repo2018\ZedBoard-FMC-Pcam-Adapter-DEMO\proj\ZedBoard-FMC-Pcam-Adapter-DEMO.sdk\ZedBoard_FMC_Pcam_Adapter_DEMO\src" -c -fmessage-length=0 -MT"src/platform/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/platform/platform.d" -MT"src/platform/platform.o" -o "src/platform/platform.o" "../src/platform/platform.c"
+Finished building: ../src/platform/platform.c
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -I"D:\repos\Incercare2019\repo2018\ZedBoard-FMC-Pcam-Adapter-DEMO\proj\ZedBoard-FMC-Pcam-Adapter-DEMO.sdk\ZedBoard_FMC_Pcam_Adapter_DEMO\src" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: ZedBoard_FMC_Pcam_Adapter_DEMO.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -L../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/lib -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ZedBoard_FMC_Pcam_Adapter_DEMO.elf"  ./src/verbose/verbose.o  ./src/uart/uart_ps.o  ./src/platform/platform.o  ./src/main.o   -l-Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: cannot find -l-Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:56: ZedBoard_FMC_Pcam_Adapter_DEMO.elf] Error 1
+13:15:51 **** Clean-only build of configuration Debug for project ZedBoard_FMC_Pcam_Adapter_DEMO ****
+make clean 
+rm -rf  ./src/main.d  ./src/verbose/verbose.o  ./src/uart/uart_ps.o  ./src/platform/platform.o  ./src/main.o  ./src/verbose/verbose.d  ./src/uart/uart_ps.d  ./src/platform/platform.d  ZedBoard_FMC_Pcam_Adapter_DEMO.elf.size  ZedBoard_FMC_Pcam_Adapter_DEMO.elf
+ 
+13:15:51 **** Auto Build of configuration Debug for project ZedBoard_FMC_Pcam_Adapter_DEMO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/verbose/verbose.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -I"D:\repos\Incercare2019\repo2018\ZedBoard-FMC-Pcam-Adapter-DEMO\proj\ZedBoard-FMC-Pcam-Adapter-DEMO.sdk\ZedBoard_FMC_Pcam_Adapter_DEMO\src" -c -fmessage-length=0 -MT"src/verbose/verbose.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/verbose/verbose.d" -MT"src/verbose/verbose.o" -o "src/verbose/verbose.o" "../src/verbose/verbose.c"
+Finished building: ../src/verbose/verbose.c
+ 
+Building file: ../src/uart/uart_ps.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -I"D:\repos\Incercare2019\repo2018\ZedBoard-FMC-Pcam-Adapter-DEMO\proj\ZedBoard-FMC-Pcam-Adapter-DEMO.sdk\ZedBoard_FMC_Pcam_Adapter_DEMO\src" -c -fmessage-length=0 -MT"src/uart/uart_ps.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/uart/uart_ps.d" -MT"src/uart/uart_ps.o" -o "src/uart/uart_ps.o" "../src/uart/uart_ps.c"
+Finished building: ../src/uart/uart_ps.c
+ 
+Building file: ../src/platform/platform.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -I"D:\repos\Incercare2019\repo2018\ZedBoard-FMC-Pcam-Adapter-DEMO\proj\ZedBoard-FMC-Pcam-Adapter-DEMO.sdk\ZedBoard_FMC_Pcam_Adapter_DEMO\src" -c -fmessage-length=0 -MT"src/platform/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/platform/platform.d" -MT"src/platform/platform.o" -o "src/platform/platform.o" "../src/platform/platform.c"
+Finished building: ../src/platform/platform.c
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -I"D:\repos\Incercare2019\repo2018\ZedBoard-FMC-Pcam-Adapter-DEMO\proj\ZedBoard-FMC-Pcam-Adapter-DEMO.sdk\ZedBoard_FMC_Pcam_Adapter_DEMO\src" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: ZedBoard_FMC_Pcam_Adapter_DEMO.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/lib -o "ZedBoard_FMC_Pcam_Adapter_DEMO.elf"  ./src/verbose/verbose.o  ./src/uart/uart_ps.o  ./src/platform/platform.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: ZedBoard_FMC_Pcam_Adapter_DEMO.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ZedBoard_FMC_Pcam_Adapter_DEMO.elf  |tee "ZedBoard_FMC_Pcam_Adapter_DEMO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 646254	   4344	 152684	 803282	  c41d2	ZedBoard_FMC_Pcam_Adapter_DEMO.elf
+Finished building: ZedBoard_FMC_Pcam_Adapter_DEMO.elf.size
+ 
+13:16:15 **** Incremental Build of configuration Debug for project ZedBoard_FMC_Pcam_Adapter_DEMO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+13:18:36 **** Incremental Build of configuration Debug for project ZedBoard_FMC_Pcam_Adapter_DEMO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+13:39:45 **** Build of project ZedBoard_FMC_Pcam_Adapter_DEMO_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/axivdma_v6_6/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/axivdma_v6_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/clk_wiz_v1_2/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/clk_wiz_v1_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_9/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_5/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_4/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/gpio_v4_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_9/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/iicps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/MIPI_CSI_2_RX_v1_0/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/MIPI_CSI_2_RX_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/MIPI_D_PHY_RX_v1_0/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/MIPI_D_PHY_RX_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_0/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_7/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/sdps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_0/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/standalone_v7_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/video_scaler_v1_0/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/video_scaler_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/vtc_v8_0/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/vtc_v8_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/axivdma_v6_6/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/axivdma_v6_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling axivdma"
+"Running Make libs in ps7_cortexa9_0/libsrc/clk_wiz_v1_2/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/clk_wiz_v1_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling Clkocking Wizard"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_9/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_5/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_4/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/gpio_v4_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_9/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/iicps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling iicps"
+"Running Make libs in ps7_cortexa9_0/libsrc/MIPI_CSI_2_RX_v1_0/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/MIPI_CSI_2_RX_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling MIPI_CSI_2_RX..."
+"Running Make libs in ps7_cortexa9_0/libsrc/MIPI_D_PHY_RX_v1_0/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/MIPI_D_PHY_RX_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling MIPI_D_PHY_RX..."
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_0/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_7/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/sdps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_0/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/standalone_v7_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+In file included from usleep.c:56:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:49:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/video_scaler_v1_0/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/video_scaler_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling video_scaler"
+"Running Make libs in ps7_cortexa9_0/libsrc/vtc_v8_0/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/vtc_v8_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling video timing controller"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+C:/Xilinx/SDK/2019.1/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+13:40:48 **** Build of configuration Debug for project ZedBoard_FMC_Pcam_Adapter_DEMO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart/uart_ps.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -I"D:\repos\Incercare2019\repo2018\ZedBoard-FMC-Pcam-Adapter-DEMO\proj\ZedBoard-FMC-Pcam-Adapter-DEMO.sdk\ZedBoard_FMC_Pcam_Adapter_DEMO\src" -c -fmessage-length=0 -MT"src/uart/uart_ps.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/uart/uart_ps.d" -MT"src/uart/uart_ps.o" -o "src/uart/uart_ps.o" "../src/uart/uart_ps.c"
+Finished building: ../src/uart/uart_ps.c
+ 
+Building file: ../src/platform/platform.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -I"D:\repos\Incercare2019\repo2018\ZedBoard-FMC-Pcam-Adapter-DEMO\proj\ZedBoard-FMC-Pcam-Adapter-DEMO.sdk\ZedBoard_FMC_Pcam_Adapter_DEMO\src" -c -fmessage-length=0 -MT"src/platform/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/platform/platform.d" -MT"src/platform/platform.o" -o "src/platform/platform.o" "../src/platform/platform.c"
+Finished building: ../src/platform/platform.c
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -I"D:\repos\Incercare2019\repo2018\ZedBoard-FMC-Pcam-Adapter-DEMO\proj\ZedBoard-FMC-Pcam-Adapter-DEMO.sdk\ZedBoard_FMC_Pcam_Adapter_DEMO\src" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: ZedBoard_FMC_Pcam_Adapter_DEMO.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/lib -o "ZedBoard_FMC_Pcam_Adapter_DEMO.elf"  ./src/verbose/verbose.o  ./src/uart/uart_ps.o  ./src/platform/platform.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: ZedBoard_FMC_Pcam_Adapter_DEMO.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ZedBoard_FMC_Pcam_Adapter_DEMO.elf  |tee "ZedBoard_FMC_Pcam_Adapter_DEMO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 646254	   4344	 152684	 803282	  c41d2	ZedBoard_FMC_Pcam_Adapter_DEMO.elf
+Finished building: ZedBoard_FMC_Pcam_Adapter_DEMO.elf.size
+ 
+18:12:22 **** Clean-only build of configuration Debug for project ZedBoard_FMC_Pcam_Adapter_DEMO ****
+make clean 
+rm -rf  ./src/main.d  ./src/verbose/verbose.o  ./src/uart/uart_ps.o  ./src/platform/platform.o  ./src/main.o  ./src/verbose/verbose.d  ./src/uart/uart_ps.d  ./src/platform/platform.d  ZedBoard_FMC_Pcam_Adapter_DEMO.elf.size  ZedBoard_FMC_Pcam_Adapter_DEMO.elf
+ 
+18:12:25 **** Auto Build of configuration Debug for project ZedBoard_FMC_Pcam_Adapter_DEMO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/verbose/verbose.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -c -fmessage-length=0 -MT"src/verbose/verbose.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/verbose/verbose.d" -MT"src/verbose/verbose.o" -o "src/verbose/verbose.o" "../src/verbose/verbose.c"
+Finished building: ../src/verbose/verbose.c
+ 
+Building file: ../src/uart/uart_ps.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -c -fmessage-length=0 -MT"src/uart/uart_ps.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/uart/uart_ps.d" -MT"src/uart/uart_ps.o" -o "src/uart/uart_ps.o" "../src/uart/uart_ps.c"
+Finished building: ../src/uart/uart_ps.c
+ 
+Building file: ../src/platform/platform.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -c -fmessage-length=0 -MT"src/platform/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/platform/platform.d" -MT"src/platform/platform.o" -o "src/platform/platform.o" "../src/platform/platform.c"
+Finished building: ../src/platform/platform.c
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:14:
+../src/cam/PS_GPIO.h:11:10: fatal error: cam/GPIO_Client.h: No such file or directory
+ #include <cam/GPIO_Client.h>
+          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+18:12:38 **** Clean-only build of configuration Debug for project ZedBoard_FMC_Pcam_Adapter_DEMO ****
+make clean 
+rm -rf  ./src/main.d  ./src/verbose/verbose.o  ./src/uart/uart_ps.o  ./src/platform/platform.o  ./src/main.o  ./src/verbose/verbose.d  ./src/uart/uart_ps.d  ./src/platform/platform.d  ZedBoard_FMC_Pcam_Adapter_DEMO.elf.size  ZedBoard_FMC_Pcam_Adapter_DEMO.elf
+ 
+18:12:38 **** Auto Build of configuration Debug for project ZedBoard_FMC_Pcam_Adapter_DEMO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/verbose/verbose.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -I"D:\repos\Incercare2019\repo2018\ZedBoard-FMC-Pcam-Adapter-DEMO\proj\ZedBoard-FMC-Pcam-Adapter-DEMO.sdk\ZedBoard_FMC_Pcam_Adapter_DEMO\src" -c -fmessage-length=0 -MT"src/verbose/verbose.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/verbose/verbose.d" -MT"src/verbose/verbose.o" -o "src/verbose/verbose.o" "../src/verbose/verbose.c"
+Finished building: ../src/verbose/verbose.c
+ 
+Building file: ../src/uart/uart_ps.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -I"D:\repos\Incercare2019\repo2018\ZedBoard-FMC-Pcam-Adapter-DEMO\proj\ZedBoard-FMC-Pcam-Adapter-DEMO.sdk\ZedBoard_FMC_Pcam_Adapter_DEMO\src" -c -fmessage-length=0 -MT"src/uart/uart_ps.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/uart/uart_ps.d" -MT"src/uart/uart_ps.o" -o "src/uart/uart_ps.o" "../src/uart/uart_ps.c"
+Finished building: ../src/uart/uart_ps.c
+ 
+Building file: ../src/platform/platform.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -I"D:\repos\Incercare2019\repo2018\ZedBoard-FMC-Pcam-Adapter-DEMO\proj\ZedBoard-FMC-Pcam-Adapter-DEMO.sdk\ZedBoard_FMC_Pcam_Adapter_DEMO\src" -c -fmessage-length=0 -MT"src/platform/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/platform/platform.d" -MT"src/platform/platform.o" -o "src/platform/platform.o" "../src/platform/platform.c"
+Finished building: ../src/platform/platform.c
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -I"D:\repos\Incercare2019\repo2018\ZedBoard-FMC-Pcam-Adapter-DEMO\proj\ZedBoard-FMC-Pcam-Adapter-DEMO.sdk\ZedBoard_FMC_Pcam_Adapter_DEMO\src" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: ZedBoard_FMC_Pcam_Adapter_DEMO.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -L../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/lib -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ZedBoard_FMC_Pcam_Adapter_DEMO.elf"  ./src/verbose/verbose.o  ./src/uart/uart_ps.o  ./src/platform/platform.o  ./src/main.o   -l-Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: cannot find -l-Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:56: ZedBoard_FMC_Pcam_Adapter_DEMO.elf] Error 1
+18:12:51 **** Clean-only build of configuration Debug for project ZedBoard_FMC_Pcam_Adapter_DEMO ****
+make clean 
+rm -rf  ./src/main.d  ./src/verbose/verbose.o  ./src/uart/uart_ps.o  ./src/platform/platform.o  ./src/main.o  ./src/verbose/verbose.d  ./src/uart/uart_ps.d  ./src/platform/platform.d  ZedBoard_FMC_Pcam_Adapter_DEMO.elf.size  ZedBoard_FMC_Pcam_Adapter_DEMO.elf
+ 
+18:12:52 **** Auto Build of configuration Debug for project ZedBoard_FMC_Pcam_Adapter_DEMO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/verbose/verbose.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -I"D:\repos\Incercare2019\repo2018\ZedBoard-FMC-Pcam-Adapter-DEMO\proj\ZedBoard-FMC-Pcam-Adapter-DEMO.sdk\ZedBoard_FMC_Pcam_Adapter_DEMO\src" -c -fmessage-length=0 -MT"src/verbose/verbose.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/verbose/verbose.d" -MT"src/verbose/verbose.o" -o "src/verbose/verbose.o" "../src/verbose/verbose.c"
+Finished building: ../src/verbose/verbose.c
+ 
+Building file: ../src/uart/uart_ps.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -I"D:\repos\Incercare2019\repo2018\ZedBoard-FMC-Pcam-Adapter-DEMO\proj\ZedBoard-FMC-Pcam-Adapter-DEMO.sdk\ZedBoard_FMC_Pcam_Adapter_DEMO\src" -c -fmessage-length=0 -MT"src/uart/uart_ps.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/uart/uart_ps.d" -MT"src/uart/uart_ps.o" -o "src/uart/uart_ps.o" "../src/uart/uart_ps.c"
+Finished building: ../src/uart/uart_ps.c
+ 
+Building file: ../src/platform/platform.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -I"D:\repos\Incercare2019\repo2018\ZedBoard-FMC-Pcam-Adapter-DEMO\proj\ZedBoard-FMC-Pcam-Adapter-DEMO.sdk\ZedBoard_FMC_Pcam_Adapter_DEMO\src" -c -fmessage-length=0 -MT"src/platform/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/platform/platform.d" -MT"src/platform/platform.o" -o "src/platform/platform.o" "../src/platform/platform.c"
+Finished building: ../src/platform/platform.c
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -I"D:\repos\Incercare2019\repo2018\ZedBoard-FMC-Pcam-Adapter-DEMO\proj\ZedBoard-FMC-Pcam-Adapter-DEMO.sdk\ZedBoard_FMC_Pcam_Adapter_DEMO\src" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: ZedBoard_FMC_Pcam_Adapter_DEMO.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/lib -o "ZedBoard_FMC_Pcam_Adapter_DEMO.elf"  ./src/verbose/verbose.o  ./src/uart/uart_ps.o  ./src/platform/platform.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: ZedBoard_FMC_Pcam_Adapter_DEMO.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ZedBoard_FMC_Pcam_Adapter_DEMO.elf  |tee "ZedBoard_FMC_Pcam_Adapter_DEMO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 646254	   4344	 152684	 803282	  c41d2	ZedBoard_FMC_Pcam_Adapter_DEMO.elf
+Finished building: ZedBoard_FMC_Pcam_Adapter_DEMO.elf.size
+ 
+18:13:25 **** Incremental Build of configuration Debug for project ZedBoard_FMC_Pcam_Adapter_DEMO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+18:15:37 **** Incremental Build of configuration Debug for project ZedBoard_FMC_Pcam_Adapter_DEMO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+18:16:02 **** Clean-only build of configuration Debug for project ZedBoard_FMC_Pcam_Adapter_DEMO ****
+make clean 
+rm -rf  ./src/main.d  ./src/verbose/verbose.o  ./src/uart/uart_ps.o  ./src/platform/platform.o  ./src/main.o  ./src/verbose/verbose.d  ./src/uart/uart_ps.d  ./src/platform/platform.d  ZedBoard_FMC_Pcam_Adapter_DEMO.elf.size  ZedBoard_FMC_Pcam_Adapter_DEMO.elf
+ 
+18:16:02 **** Auto Build of configuration Debug for project ZedBoard_FMC_Pcam_Adapter_DEMO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/verbose/verbose.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -c -fmessage-length=0 -MT"src/verbose/verbose.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/verbose/verbose.d" -MT"src/verbose/verbose.o" -o "src/verbose/verbose.o" "../src/verbose/verbose.c"
+Finished building: ../src/verbose/verbose.c
+ 
+Building file: ../src/uart/uart_ps.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -c -fmessage-length=0 -MT"src/uart/uart_ps.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/uart/uart_ps.d" -MT"src/uart/uart_ps.o" -o "src/uart/uart_ps.o" "../src/uart/uart_ps.c"
+Finished building: ../src/uart/uart_ps.c
+ 
+Building file: ../src/platform/platform.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -c -fmessage-length=0 -MT"src/platform/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/platform/platform.d" -MT"src/platform/platform.o" -o "src/platform/platform.o" "../src/platform/platform.c"
+Finished building: ../src/platform/platform.c
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:14:
+../src/cam/PS_GPIO.h:11:10: fatal error: cam/GPIO_Client.h: No such file or directory
+ #include <cam/GPIO_Client.h>
+          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+18:16:13 **** Clean-only build of configuration Debug for project ZedBoard_FMC_Pcam_Adapter_DEMO ****
+make clean 
+rm -rf  ./src/main.d  ./src/verbose/verbose.o  ./src/uart/uart_ps.o  ./src/platform/platform.o  ./src/main.o  ./src/verbose/verbose.d  ./src/uart/uart_ps.d  ./src/platform/platform.d  ZedBoard_FMC_Pcam_Adapter_DEMO.elf.size  ZedBoard_FMC_Pcam_Adapter_DEMO.elf
+ 
+18:16:13 **** Auto Build of configuration Debug for project ZedBoard_FMC_Pcam_Adapter_DEMO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/verbose/verbose.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -I"D:\repos\Incercare2019\repo2018\ZedBoard-FMC-Pcam-Adapter-DEMO\proj\ZedBoard-FMC-Pcam-Adapter-DEMO.sdk\ZedBoard_FMC_Pcam_Adapter_DEMO\src" -c -fmessage-length=0 -MT"src/verbose/verbose.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/verbose/verbose.d" -MT"src/verbose/verbose.o" -o "src/verbose/verbose.o" "../src/verbose/verbose.c"
+Finished building: ../src/verbose/verbose.c
+ 
+Building file: ../src/uart/uart_ps.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -I"D:\repos\Incercare2019\repo2018\ZedBoard-FMC-Pcam-Adapter-DEMO\proj\ZedBoard-FMC-Pcam-Adapter-DEMO.sdk\ZedBoard_FMC_Pcam_Adapter_DEMO\src" -c -fmessage-length=0 -MT"src/uart/uart_ps.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/uart/uart_ps.d" -MT"src/uart/uart_ps.o" -o "src/uart/uart_ps.o" "../src/uart/uart_ps.c"
+Finished building: ../src/uart/uart_ps.c
+ 
+Building file: ../src/platform/platform.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -I"D:\repos\Incercare2019\repo2018\ZedBoard-FMC-Pcam-Adapter-DEMO\proj\ZedBoard-FMC-Pcam-Adapter-DEMO.sdk\ZedBoard_FMC_Pcam_Adapter_DEMO\src" -c -fmessage-length=0 -MT"src/platform/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/platform/platform.d" -MT"src/platform/platform.o" -o "src/platform/platform.o" "../src/platform/platform.c"
+Finished building: ../src/platform/platform.c
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -I"D:\repos\Incercare2019\repo2018\ZedBoard-FMC-Pcam-Adapter-DEMO\proj\ZedBoard-FMC-Pcam-Adapter-DEMO.sdk\ZedBoard_FMC_Pcam_Adapter_DEMO\src" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: ZedBoard_FMC_Pcam_Adapter_DEMO.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -L../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/lib -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ZedBoard_FMC_Pcam_Adapter_DEMO.elf"  ./src/verbose/verbose.o  ./src/uart/uart_ps.o  ./src/platform/platform.o  ./src/main.o   -l-Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: cannot find -l-Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:56: ZedBoard_FMC_Pcam_Adapter_DEMO.elf] Error 1
+18:16:28 **** Clean-only build of configuration Debug for project ZedBoard_FMC_Pcam_Adapter_DEMO ****
+make clean 
+rm -rf  ./src/main.d  ./src/verbose/verbose.o  ./src/uart/uart_ps.o  ./src/platform/platform.o  ./src/main.o  ./src/verbose/verbose.d  ./src/uart/uart_ps.d  ./src/platform/platform.d  ZedBoard_FMC_Pcam_Adapter_DEMO.elf.size  ZedBoard_FMC_Pcam_Adapter_DEMO.elf
+ 
+18:16:28 **** Auto Build of configuration Debug for project ZedBoard_FMC_Pcam_Adapter_DEMO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/verbose/verbose.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -I"D:\repos\Incercare2019\repo2018\ZedBoard-FMC-Pcam-Adapter-DEMO\proj\ZedBoard-FMC-Pcam-Adapter-DEMO.sdk\ZedBoard_FMC_Pcam_Adapter_DEMO\src" -c -fmessage-length=0 -MT"src/verbose/verbose.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/verbose/verbose.d" -MT"src/verbose/verbose.o" -o "src/verbose/verbose.o" "../src/verbose/verbose.c"
+Finished building: ../src/verbose/verbose.c
+ 
+Building file: ../src/uart/uart_ps.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -I"D:\repos\Incercare2019\repo2018\ZedBoard-FMC-Pcam-Adapter-DEMO\proj\ZedBoard-FMC-Pcam-Adapter-DEMO.sdk\ZedBoard_FMC_Pcam_Adapter_DEMO\src" -c -fmessage-length=0 -MT"src/uart/uart_ps.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/uart/uart_ps.d" -MT"src/uart/uart_ps.o" -o "src/uart/uart_ps.o" "../src/uart/uart_ps.c"
+Finished building: ../src/uart/uart_ps.c
+ 
+Building file: ../src/platform/platform.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -I"D:\repos\Incercare2019\repo2018\ZedBoard-FMC-Pcam-Adapter-DEMO\proj\ZedBoard-FMC-Pcam-Adapter-DEMO.sdk\ZedBoard_FMC_Pcam_Adapter_DEMO\src" -c -fmessage-length=0 -MT"src/platform/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/platform/platform.d" -MT"src/platform/platform.o" -o "src/platform/platform.o" "../src/platform/platform.c"
+Finished building: ../src/platform/platform.c
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -I"D:\repos\Incercare2019\repo2018\ZedBoard-FMC-Pcam-Adapter-DEMO\proj\ZedBoard-FMC-Pcam-Adapter-DEMO.sdk\ZedBoard_FMC_Pcam_Adapter_DEMO\src" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: ZedBoard_FMC_Pcam_Adapter_DEMO.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/lib -o "ZedBoard_FMC_Pcam_Adapter_DEMO.elf"  ./src/verbose/verbose.o  ./src/uart/uart_ps.o  ./src/platform/platform.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: ZedBoard_FMC_Pcam_Adapter_DEMO.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ZedBoard_FMC_Pcam_Adapter_DEMO.elf  |tee "ZedBoard_FMC_Pcam_Adapter_DEMO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 646254	   4344	 152684	 803282	  c41d2	ZedBoard_FMC_Pcam_Adapter_DEMO.elf
+Finished building: ZedBoard_FMC_Pcam_Adapter_DEMO.elf.size
+ 
+18:41:41 **** Clean-only build of configuration Debug for project ZedBoard_FMC_Pcam_Adapter_DEMO ****
+make clean 
+rm -rf  ./src/main.d  ./src/verbose/verbose.o  ./src/uart/uart_ps.o  ./src/platform/platform.o  ./src/main.o  ./src/verbose/verbose.d  ./src/uart/uart_ps.d  ./src/platform/platform.d  ZedBoard_FMC_Pcam_Adapter_DEMO.elf.size  ZedBoard_FMC_Pcam_Adapter_DEMO.elf
+ 
+18:41:43 **** Auto Build of configuration Debug for project ZedBoard_FMC_Pcam_Adapter_DEMO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/verbose/verbose.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -I"D:\repos\Incercare2019\repo2018\ZedBoard-FMC-Pcam-Adapter-DEMO\proj\ZedBoard-FMC-Pcam-Adapter-DEMO.sdk\ZedBoard_FMC_Pcam_Adapter_DEMO\src" -c -fmessage-length=0 -MT"src/verbose/verbose.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/verbose/verbose.d" -MT"src/verbose/verbose.o" -o "src/verbose/verbose.o" "../src/verbose/verbose.c"
+Finished building: ../src/verbose/verbose.c
+ 
+Building file: ../src/uart/uart_ps.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -I"D:\repos\Incercare2019\repo2018\ZedBoard-FMC-Pcam-Adapter-DEMO\proj\ZedBoard-FMC-Pcam-Adapter-DEMO.sdk\ZedBoard_FMC_Pcam_Adapter_DEMO\src" -c -fmessage-length=0 -MT"src/uart/uart_ps.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/uart/uart_ps.d" -MT"src/uart/uart_ps.o" -o "src/uart/uart_ps.o" "../src/uart/uart_ps.c"
+Finished building: ../src/uart/uart_ps.c
+ 
+Building file: ../src/platform/platform.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -I"D:\repos\Incercare2019\repo2018\ZedBoard-FMC-Pcam-Adapter-DEMO\proj\ZedBoard-FMC-Pcam-Adapter-DEMO.sdk\ZedBoard_FMC_Pcam_Adapter_DEMO\src" -c -fmessage-length=0 -MT"src/platform/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/platform/platform.d" -MT"src/platform/platform.o" -o "src/platform/platform.o" "../src/platform/platform.c"
+Finished building: ../src/platform/platform.c
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/include -I"D:\repos\Incercare2019\repo2018\ZedBoard-FMC-Pcam-Adapter-DEMO\proj\ZedBoard-FMC-Pcam-Adapter-DEMO.sdk\ZedBoard_FMC_Pcam_Adapter_DEMO\src" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: ZedBoard_FMC_Pcam_Adapter_DEMO.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ZedBoard_FMC_Pcam_Adapter_DEMO_bsp/ps7_cortexa9_0/lib -o "ZedBoard_FMC_Pcam_Adapter_DEMO.elf"  ./src/verbose/verbose.o  ./src/uart/uart_ps.o  ./src/platform/platform.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: ZedBoard_FMC_Pcam_Adapter_DEMO.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ZedBoard_FMC_Pcam_Adapter_DEMO.elf  |tee "ZedBoard_FMC_Pcam_Adapter_DEMO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 646254	   4344	 152700	 803298	  c41e2	ZedBoard_FMC_Pcam_Adapter_DEMO.elf
+Finished building: ZedBoard_FMC_Pcam_Adapter_DEMO.elf.size
+ 
+18:42:25 **** Incremental Build of configuration Debug for project ZedBoard_FMC_Pcam_Adapter_DEMO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
