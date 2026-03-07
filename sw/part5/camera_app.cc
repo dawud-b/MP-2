@@ -7,6 +7,8 @@
 
 #include "./camera_app.h"
 #include "xparameters.h"
+#include "xtime_l.h"
+#include "time.h"
 
 int main()
 {
@@ -235,15 +237,20 @@ void camera_loop(void)
 
   uint32_t kernel3by3[9] = {0};
 
+  uint64_t tests[3] = {0};
+
   uint64_t start_time;
   uint64_t end_time;
-
-  sleep(5);
+  uint64_t test1;
+  uint64_t test2;
+  XTime_GetTime(&start_time);
   while (1) {
 	  int count = 0;
-	  start_time = Xil_In64(XPAR_GLOBAL_TMR_BASEADDR);
+	  XTime_GetTime(&start_time);
 	  for (int row = 0; row < 1080; row++) {
 		  for (int col = 0; col < 1920; col++) {
+
+			  XTime_GetTime(&test1);
 
 			  if (row == 0 || col == 0)
 				  kernel3by3[0] = 0;
@@ -287,9 +294,14 @@ void camera_loop(void)
 			  else
 				  kernel3by3[8] = s2mm_frame[row+1][col+1];
 
+			  XTime_GetTime(&test2);
+			  tests[0] = test2 - test1;
+
 			  uint16_t red = 0;
 			  uint16_t green = 0;
 			  uint16_t blue = 0;
+
+			  XTime_GetTime(&test1);
 
 			  if (row % 2 == 0 && col % 2 == 0) {
 				  red = kernel3by3[4];
@@ -309,19 +321,32 @@ void camera_loop(void)
 				  blue = kernel3by3[4];
 			  }
 
-			  uint8_t Y = ((uint8_t) (16.0 + (float) red * 0.183 + (float) green * 0.614 + (float) blue * 0.062)) & 0xff;
-			  uint8_t Cb = ((uint8_t) (128.0 + (float) red * -0.101 + (float) green * -0.338 + (float) blue * 0.439)) & 0xff;
-			  uint8_t Cr = ((uint8_t) (128.0 + (float) red * 0.439 + (float) green * -0.399 + (float) blue * -0.040)) & 0xff;
+			  XTime_GetTime(&test2);
+			  tests[1] = test2 - test1;
+
+			  XTime_GetTime(&test1);
+
+			  uint8_t Y = ((uint8_t) (16.0 + (float) red * 0.183 + (float) green * 0.614 + (float) blue * 0.062));
+			  uint8_t Cb = ((uint8_t) (128.0 + (float) red * -0.101 + (float) green * -0.338 + (float) blue * 0.439));
+			  uint8_t Cr = ((uint8_t) (128.0 + (float) red * 0.439 + (float) green * -0.399 + (float) blue * -0.040));
 
 
 			  uint16_t YCbCr = count % 2 ? (Cb << 8) | Y : (Cr << 8) | Y;
+
+			  XTime_GetTime(&test2);
+			  tests[2] = test2 - test1;
 
 			  mm2s_frame[row][col] = YCbCr;
 			  count++;
 		  }
 	  }
-	  end_time = Xil_In64(XPAR_GLOBAL_TMR_BASEADDR);
-	  xil_printf("Time for a single frame: %llu\r\n", end_time - start_time);
+	  XTime_GetTime(&end_time);
+	  uint64_t cycles = end_time - start_time;
+	  float seconds_per_frame = (float) cycles / (float) COUNTS_PER_SECOND;
+	  float frames_per_second = 1.0 / seconds_per_frame;
+	  //printf("Time for a single frame: %llu\r\n", cycles); // xil_printf was printing wrong for %llu
+	  printf("Seconds per frame: %f. Frames per second: %f\r\n", seconds_per_frame, frames_per_second);
+	  printf("Cycles for the window memory reads: %llu. Cycles for averaging: %llu. Cycles for float matrix multiplication: %llu.\r\n", tests[0], tests[1], tests[2]);
   }
 
 
