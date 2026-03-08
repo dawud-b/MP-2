@@ -9,6 +9,7 @@
 #include "xparameters.h"
 #include "xtime_l.h"
 #include "time.h"
+#include <arm_neon.h>
 
 int main()
 {
@@ -248,6 +249,28 @@ void camera_loop(void)
 	  int count = 0;
 	  XTime_GetTime(&start_time);
 	  for (int row = 0; row < 1080; row++) {
+
+
+		  uint16x8x2_t top_row_RG = vld2q_u16((volatile const uint16_t*) &s2mm_frame[row][0]);
+		  uint16x8x2_t middle_row_GB = vld2q_u16((volatile const uint16_t*) &s2mm_frame[row+1][0]);
+		  uint16x8x2_t bottom_row_RG = vld2q_u16((volatile const uint16_t*) &s2mm_frame[row+2][0]);
+
+		  uint16x8_t mixed_reds = vaddq_u16(top_row_RG.val[0], bottom_row_RG.val[0]);
+		  uint16x8_t mixed_greens = vaddq_u16(top_row_RG.val[1], bottom_row_RG.val[1]);
+
+		  uint16x8_t middle_greens = middle_row_GB.val[0];
+		  uint16x8_t middle_blues = middle_row_GB.val[1];
+
+		  uint16x8_t mixed_greens_shifted_left = vextq_u16(mixed_greens, mixed_greens, 1); // dont waste time loading a zero vector
+		  uint16x8_t middle_greens_shifted_left = vextq_u16(middle_greens, middle_greens, 1);
+
+		  // theres also a rounding one maybe. Divide by 4.
+		  uint16x8_t green_left_comb = vshrq_n_u16(vaddq_u16(mixed_greens, vaddq_u16(middle_greens, middle_greens_shifted_left)), 2);
+		  // TODO: right comb needs divide by 5 not 4
+		  uint16x8_t green_right_comb = vshrq_n_u16(vaddq_u16(mixed_greens, vaddq_u16(mixed_greens_shifted_left, middle_greens_shifted_left)), 2);
+
+
+
 		  for (int col = 0; col < 1920; col++) {
 
 			  XTime_GetTime(&test1);
