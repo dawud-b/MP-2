@@ -11,6 +11,8 @@
 #include "time.h"
 #include <arm_neon.h>
 #include "xv_hcresampler.h"
+#include "xvprocss.h"
+#include "xv_demosaic.h"
 
 int main()
 {
@@ -24,7 +26,27 @@ int main()
   start_input_video_pipeline(vdma_a_driver, *cam_a_ptr, Resolution::R1920_1080_60_PP, OV5640_cfg::mode_t::MODE_1080P_1920_1080_30fps_336M_MIPI, csi_baseaddr_tmp);
 
   // Start SW Processing of Video Frames
-  camera_loop();
+  //camera_loop();
+
+  u32 current_vdmacr = Xil_In32(XPAR_AXIVDMA_0_BASEADDR + 0x30);
+  Xil_Out32(XPAR_AXIVDMA_0_BASEADDR + 0x30, current_vdmacr | (1 << 12));
+
+  u64 around_frame_start;
+  XTime_GetTime(&around_frame_start);
+
+  while (1) {
+	  //int counts = Xil_In32(XPAR_AXIVDMA_0_BASEADDR + 0x34) >> 24;
+	  //printf("%d\r\n", counts);
+
+	  if (Xil_In32(XPAR_AXIVDMA_0_BASEADDR + 0x34) & (1 << 12)) {
+		  u64 previous_time = around_frame_start;
+		  XTime_GetTime(&around_frame_start);
+		  Xil_Out32(XPAR_AXIVDMA_0_BASEADDR + 0x34, 0); // this needs to beet the time it takes to make a frame (should be clear on write for our relevant bit).
+
+		  printf("Frame time: %llu\r\n", COUNTS_PER_SECOND / (around_frame_start - previous_time));
+	  }
+
+  }
 
   // Shutdown Platform
   cleanup_platform();
@@ -296,11 +318,11 @@ int enable_color_pipeline(void) {
    // This could have been set up with direct register writes, but there are about 20 registers that need to be set for this IP block
 
    // Uncomment to setup Color Conversion IP
-//   Config_ptr = XVprocSs_LookupConfig(XPAR_XVPROCSS_0_DEVICE_ID);
-//   XVprocSs_CfgInitialize(&proc_ss_RGB_YCrCb_444, Config_ptr, XPAR_XVPROCSS_0_BASEADDR);
-//   XVprocSs_SetSubsystemConfig(&proc_ss_RGB_YCrCb_444);
-//   XV_CscSetColorspace(proc_ss_RGB_YCrCb_444.CscPtr, XVIDC_CSF_RGB, XVIDC_CSF_YCRCB_444, XVIDC_BT_709, XVIDC_BT_709, XVIDC_CR_0_255);
-//   XVprocSs_Start(&proc_ss_RGB_YCrCb_444);
+   Config_ptr = XVprocSs_LookupConfig(XPAR_XVPROCSS_0_DEVICE_ID);
+   XVprocSs_CfgInitialize(&proc_ss_RGB_YCrCb_444, Config_ptr, XPAR_XVPROCSS_0_BASEADDR);
+   XVprocSs_SetSubsystemConfig(&proc_ss_RGB_YCrCb_444);
+   XV_CscSetColorspace(proc_ss_RGB_YCrCb_444.CscPtr, XVIDC_CSF_RGB, XVIDC_CSF_YCRCB_444, XVIDC_BT_709, XVIDC_BT_709, XVIDC_CR_0_255);
+   XVprocSs_Start(&proc_ss_RGB_YCrCb_444);
    xil_printf("RGB to 4:4:4 IP Configuration and Enable done\r\n");
 
 
@@ -310,8 +332,12 @@ int enable_color_pipeline(void) {
 
    // Add assignment here
 
+   Xil_Out16(XPAR_XV_DEMOSAIC_0_S_AXI_CTRL_BASEADDR + XV_DEMOSAIC_CTRL_ADDR_HWREG_WIDTH_DATA, 1920);
+   Xil_Out16(XPAR_XV_DEMOSAIC_0_S_AXI_CTRL_BASEADDR + XV_DEMOSAIC_CTRL_ADDR_HWREG_HEIGHT_DATA, 1080);
+   Xil_Out16(XPAR_XV_DEMOSAIC_0_S_AXI_CTRL_BASEADDR + XV_DEMOSAIC_CTRL_ADDR_HWREG_BAYER_PHASE_DATA, 3);
+
    // Uncomment as part of Demosaic IP setup
-//   Xil_Out32((XPAR_XV_DEMOSAIC_0_S_AXI_CTRL_BASEADDR) + (XV_DEMOSAIC_CTRL_ADDR_AP_CTRL), (u32)(0x81));// 0b10000001 means start and freerun mode (page 16 in PG286)
+   Xil_Out16((XPAR_XV_DEMOSAIC_0_S_AXI_CTRL_BASEADDR) + (XV_DEMOSAIC_CTRL_ADDR_AP_CTRL), (u32)(0x81));// 0b10000001 means start and freerun mode (page 16 in PG286)
    xil_printf("Demosaic IP Configuring and Enable done\r\n"); // RGRG sensor pattern
 
    return 0;

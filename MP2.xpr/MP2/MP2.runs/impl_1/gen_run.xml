@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1773011710">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1773044412">
   <File Type="BITSTR-BMM" Name="system_wrapper_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="system_wrapper_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="system_wrapper_timing_summary_init.rpt"/>
@@ -194,8 +194,8 @@
   <BlockFileSet Type="BlockSrcs" Name="system_v_demosaic_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_rst_system_150M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="bd_22c6_rx_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="system_processing_system7_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_xbar_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_axi_gpio_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_video_dynclk_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_vtg_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_v_axi4s_vid_out_0_0"/>

@@ -90,6 +90,9 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_v_proc_s
 # IP: bd/system/ip/system_axis_subset_converter_0_2/system_axis_subset_converter_0_2.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axis_subset_converter_0_2 || ORIG_REF_NAME==system_axis_subset_converter_0_2} -quiet] -quiet
 
+# IP: bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_gpio_0_0 || ORIG_REF_NAME==system_axi_gpio_0_0} -quiet] -quiet
+
 # IP: bd/system/ip/system_auto_pc_0/system_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_auto_pc_0 || ORIG_REF_NAME==system_auto_pc_0} -quiet] -quiet
 
