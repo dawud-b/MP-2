@@ -15,6 +15,8 @@
 #include "xv_demosaic.h"
 #include "image_buffer.h"
 
+void camera_interface();
+
 int main()
 {
   // Start bringing up board
@@ -32,22 +34,24 @@ int main()
   u32 current_vdmacr = Xil_In32(XPAR_AXIVDMA_0_BASEADDR + 0x30);
   Xil_Out32(XPAR_AXIVDMA_0_BASEADDR + 0x30, current_vdmacr | (1 << 12));
 
-  u64 around_frame_start;
-  XTime_GetTime(&around_frame_start);
+//  u64 around_frame_start;
+//  XTime_GetTime(&around_frame_start);
+//
+//  while (1) {
+//	  //int counts = Xil_In32(XPAR_AXIVDMA_0_BASEADDR + 0x34) >> 24;
+//	  //printf("%d\r\n", counts);
+//
+//	  if (Xil_In32(XPAR_AXIVDMA_0_BASEADDR + 0x34) & (1 << 12)) {
+//		  u64 previous_time = around_frame_start;
+//		  XTime_GetTime(&around_frame_start);
+//		  Xil_Out32(XPAR_AXIVDMA_0_BASEADDR + 0x34, 0); // this needs to beet the time it takes to make a frame (should be clear on write for our relevant bit).
+//
+//		  printf("Frame time: %llu\r\n", COUNTS_PER_SECOND / (around_frame_start - previous_time));
+//	  }
+//
+//  }
 
-  while (1) {
-	  //int counts = Xil_In32(XPAR_AXIVDMA_0_BASEADDR + 0x34) >> 24;
-	  //printf("%d\r\n", counts);
-
-	  if (Xil_In32(XPAR_AXIVDMA_0_BASEADDR + 0x34) & (1 << 12)) {
-		  u64 previous_time = around_frame_start;
-		  XTime_GetTime(&around_frame_start);
-		  Xil_Out32(XPAR_AXIVDMA_0_BASEADDR + 0x34, 0); // this needs to beet the time it takes to make a frame (should be clear on write for our relevant bit).
-
-		  printf("Frame time: %llu\r\n", COUNTS_PER_SECOND / (around_frame_start - previous_time));
-	  }
-
-  }
+  camera_interface();
 
   // Shutdown Platform
   cleanup_platform();
@@ -63,30 +67,79 @@ typedef enum {
 
 
 
-void camera_interface_cycle() {
+void camera_interface() {
+	Xuint32 parkptr; // Store Park location for VDMA Write or Read channel
+	Xuint32 vdma_S2MM_DMACR;  // Store value of VDMA Write channel Control Register
+	Xuint32 vdma_MM2S_DMACR;  // Store value of VDMA Read channel Control Register
+	// Grab the DMA parkptr, and update it to ensure that when parked, the S2MM side is on frame 0, and the MM2S side on frame 1
+	parkptr = XAxiVdma_ReadReg(XPAR_AXIVDMA_0_BASEADDR, XAXIVDMA_PARKPTR_OFFSET);
+	parkptr &= ~XAXIVDMA_PARKPTR_READREF_MASK;
+	parkptr &= ~XAXIVDMA_PARKPTR_WRTREF_MASK;
+	parkptr |= 0x1;
+	XAxiVdma_WriteReg(XPAR_AXIVDMA_0_BASEADDR, XAXIVDMA_PARKPTR_OFFSET, parkptr);
+	volatile Xuint16 *pS2MM_Mem;
+	volatile Xuint16 *pMM2S_Mem;
 
 	u32 buttons = Xil_In32(XPAR_AXI_GPIO_0_BASEADDR);
+	u32 switches = Xil_In32(XPAR_AXI_GPIO_0_BASEADDR + 0x8);
 
 	while (1) {
 
-		u32 new_buttons = Xil_In32(XPAR_AXI_GPIO_0_BASEADDR);
+		usleep(5000);
 
-		if (!((new_buttons ^ buttons) & new_buttons)) // check if change in buttons and if the change is due button press (and not depress). Otherwise restart loop.
-			continue;
+		int button_press = 0;
+		u32 new_buttons = Xil_In32(XPAR_AXI_GPIO_0_BASEADDR);
+		u32 new_switches = Xil_In32(XPAR_AXI_GPIO_0_BASEADDR + 0x8);
+
+		if (((new_buttons ^ buttons) & new_buttons)) { // check if change in buttons and if the change is due button press (and not depress).
+			button_press = 1;
+			buttons = new_buttons;
+			switches = new_switches;
+
+			if (buttons & BUTTON_C_GPIO) {
+
+				// Grab the VDMA Control Registers, and place VDMA channels in Park
+				// (i.e., Lock each VDMA channel to its own frame buffer)
+				vdma_MM2S_DMACR = XAxiVdma_ReadReg(XPAR_AXIVDMA_0_BASEADDR, XAXIVDMA_TX_OFFSET+XAXIVDMA_CR_OFFSET);
+				XAxiVdma_WriteReg(XPAR_AXIVDMA_0_BASEADDR, XAXIVDMA_TX_OFFSET+XAXIVDMA_CR_OFFSET, vdma_MM2S_DMACR & ~XAXIVDMA_CR_TAIL_EN_MASK);
+				vdma_S2MM_DMACR = XAxiVdma_ReadReg(XPAR_AXIVDMA_0_BASEADDR, XAXIVDMA_RX_OFFSET+XAXIVDMA_CR_OFFSET);
+				XAxiVdma_WriteReg(XPAR_AXIVDMA_0_BASEADDR, XAXIVDMA_RX_OFFSET+XAXIVDMA_CR_OFFSET, vdma_S2MM_DMACR & ~XAXIVDMA_CR_TAIL_EN_MASK);
+
+				// Pointers to the S2MM memory frame and M2SS memory frame
+				pS2MM_Mem = (Xuint16 *)XAxiVdma_ReadReg(XPAR_AXIVDMA_0_BASEADDR, XAXIVDMA_S2MM_ADDR_OFFSET+XAXIVDMA_START_ADDR_OFFSET);
+				pMM2S_Mem = (Xuint16 *)XAxiVdma_ReadReg(XPAR_AXIVDMA_0_BASEADDR, XAXIVDMA_MM2S_ADDR_OFFSET+XAXIVDMA_START_ADDR_OFFSET+4);
+
+				image_buffer_add_image(pS2MM_Mem);
+
+				sleep(2);
+
+				// Grab the VDMA Control Registers, and take VDMA channels out of Park
+				// (i.e., Allow each VDMA channel to sequence through all frame buffers)
+				vdma_MM2S_DMACR = XAxiVdma_ReadReg(XPAR_AXIVDMA_0_BASEADDR, XAXIVDMA_TX_OFFSET+XAXIVDMA_CR_OFFSET);
+				XAxiVdma_WriteReg(XPAR_AXIVDMA_0_BASEADDR, XAXIVDMA_TX_OFFSET+XAXIVDMA_CR_OFFSET, vdma_MM2S_DMACR | XAXIVDMA_CR_TAIL_EN_MASK);
+				vdma_S2MM_DMACR = XAxiVdma_ReadReg(XPAR_AXIVDMA_0_BASEADDR, XAXIVDMA_RX_OFFSET+XAXIVDMA_CR_OFFSET);
+				XAxiVdma_WriteReg(XPAR_AXIVDMA_0_BASEADDR, XAXIVDMA_RX_OFFSET+XAXIVDMA_CR_OFFSET, vdma_S2MM_DMACR | XAXIVDMA_CR_TAIL_EN_MASK);
+				continue;
+			}
+		}
 
 		buttons = new_buttons;
 
-		if (buttons & BUTTON_C_GPIO) {
-			Xuint32 parkptr; // Store Park location for VDMA Write or Read channel
-			Xuint32 vdma_S2MM_DMACR;  // Store value of VDMA Write channel Control Register
-			Xuint32 vdma_MM2S_DMACR;  // Store value of VDMA Read channel Control Register
+		if ((new_switches & 1) ^ (switches & 1)) { // toggled.
+			switches = new_switches;
 
-			// Grab the DMA parkptr, and update it to ensure that when parked, the S2MM side is on frame 0, and the MM2S side on frame 1
-			parkptr = XAxiVdma_ReadReg(XPAR_AXIVDMA_0_BASEADDR, XAXIVDMA_PARKPTR_OFFSET);
-			parkptr &= ~XAXIVDMA_PARKPTR_READREF_MASK;
-			parkptr &= ~XAXIVDMA_PARKPTR_WRTREF_MASK;
-			parkptr |= 0x1;
-			XAxiVdma_WriteReg(XPAR_AXIVDMA_0_BASEADDR, XAXIVDMA_PARKPTR_OFFSET, parkptr);
+			if (!(switches & 1)) { // going out of playback mode.
+
+				// Grab the VDMA Control Registers, and take VDMA channels out of Park
+				// (i.e., Allow each VDMA channel to sequence through all frame buffers)
+				vdma_MM2S_DMACR = XAxiVdma_ReadReg(XPAR_AXIVDMA_0_BASEADDR, XAXIVDMA_TX_OFFSET+XAXIVDMA_CR_OFFSET);
+				XAxiVdma_WriteReg(XPAR_AXIVDMA_0_BASEADDR, XAXIVDMA_TX_OFFSET+XAXIVDMA_CR_OFFSET, vdma_MM2S_DMACR | XAXIVDMA_CR_TAIL_EN_MASK);
+				vdma_S2MM_DMACR = XAxiVdma_ReadReg(XPAR_AXIVDMA_0_BASEADDR, XAXIVDMA_RX_OFFSET+XAXIVDMA_CR_OFFSET);
+				XAxiVdma_WriteReg(XPAR_AXIVDMA_0_BASEADDR, XAXIVDMA_RX_OFFSET+XAXIVDMA_CR_OFFSET, vdma_S2MM_DMACR | XAXIVDMA_CR_TAIL_EN_MASK);
+				continue;
+			}
+
+			// going into playback mode
 
 			// Grab the VDMA Control Registers, and place VDMA channels in Park
 			// (i.e., Lock each VDMA channel to its own frame buffer)
@@ -96,14 +149,31 @@ void camera_interface_cycle() {
 			XAxiVdma_WriteReg(XPAR_AXIVDMA_0_BASEADDR, XAXIVDMA_RX_OFFSET+XAXIVDMA_CR_OFFSET, vdma_S2MM_DMACR & ~XAXIVDMA_CR_TAIL_EN_MASK);
 
 			// Pointers to the S2MM memory frame and M2SS memory frame
-			volatile Xuint16 *pS2MM_Mem = (Xuint16 *)XAxiVdma_ReadReg(XPAR_AXIVDMA_0_BASEADDR, XAXIVDMA_S2MM_ADDR_OFFSET+XAXIVDMA_START_ADDR_OFFSET);
-			volatile Xuint16 *pMM2S_Mem = (Xuint16 *)XAxiVdma_ReadReg(XPAR_AXIVDMA_0_BASEADDR, XAXIVDMA_MM2S_ADDR_OFFSET+XAXIVDMA_START_ADDR_OFFSET+4);
+			pS2MM_Mem = (Xuint16 *)XAxiVdma_ReadReg(XPAR_AXIVDMA_0_BASEADDR, XAXIVDMA_S2MM_ADDR_OFFSET+XAXIVDMA_START_ADDR_OFFSET);
+			pMM2S_Mem = (Xuint16 *)XAxiVdma_ReadReg(XPAR_AXIVDMA_0_BASEADDR, XAXIVDMA_MM2S_ADDR_OFFSET+XAXIVDMA_START_ADDR_OFFSET+4);
 
-			image_buffer_add_image(pS2MM_Mem);
-
+			image_buffer_copy_image(pMM2S_Mem);
 		}
 
+		switches = new_switches;
 
+		if (!(switches & 1))
+			continue;
+
+		// rest if in playback mode
+
+		if (!button_press)
+			continue;
+
+		if (buttons & BUTTON_R_GPIO) {
+			image_buffer_track_right();
+			image_buffer_copy_image(pMM2S_Mem);
+		}
+
+		if (buttons & BUTTON_L_GPIO) {
+			image_buffer_track_left();
+			image_buffer_copy_image(pMM2S_Mem);
+		}
 
 
 	}
