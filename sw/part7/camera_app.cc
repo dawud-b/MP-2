@@ -31,8 +31,8 @@ int main()
   // Start SW Processing of Video Frames
   //camera_loop();
 
-  u32 current_vdmacr = Xil_In32(XPAR_AXIVDMA_0_BASEADDR + 0x30);
-  Xil_Out32(XPAR_AXIVDMA_0_BASEADDR + 0x30, current_vdmacr | (1 << 12));
+  //u32 current_vdmacr = Xil_In32(XPAR_AXIVDMA_0_BASEADDR + 0x30);
+  //Xil_Out32(XPAR_AXIVDMA_0_BASEADDR + 0x30, current_vdmacr | (1 << 12));
 
 //  u64 around_frame_start;
 //  XTime_GetTime(&around_frame_start);
@@ -85,7 +85,7 @@ void camera_interface() {
 
 	while (1) {
 
-		usleep(5000);
+		usleep(1000);
 
 		int button_press = 0;
 		u32 new_buttons = Xil_In32(XPAR_AXI_GPIO_0_BASEADDR);
