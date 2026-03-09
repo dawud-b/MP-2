@@ -1,8 +1,8 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Fri Feb 27 10:32:59 2026
-// Host        : CO2041-03 running 64-bit major release  (build 9200)
+// Date        : Sun Mar  8 18:11:58 2026
+// Host        : CO2041-13 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_axis_subset_converter_0_1/system_axis_subset_converter_0_1_sim_netlist.v
 // Design      : system_axis_subset_converter_0_1
@@ -39,15 +39,15 @@ module system_axis_subset_converter_0_1
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS TUSER" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_AXIS, TDATA_NUM_BYTES 2, TDEST_WIDTH 10, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 150000000, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0" *) input [0:0]s_axis_tuser;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TVALID" *) output m_axis_tvalid;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TREADY" *) input m_axis_tready;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TDATA" *) output [15:0]m_axis_tdata;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TDATA" *) output [7:0]m_axis_tdata;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TLAST" *) output m_axis_tlast;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TDEST" *) output [9:0]m_axis_tdest;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TUSER" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXIS, TDATA_NUM_BYTES 2, TDEST_WIDTH 10, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 150000000, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0" *) output [0:0]m_axis_tuser;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TDEST" *) output [0:0]m_axis_tdest;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TUSER" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXIS, TDATA_NUM_BYTES 1, TDEST_WIDTH 1, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 150000000, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0" *) output [0:0]m_axis_tuser;
 
   wire aclk;
   wire aresetn;
-  wire [15:0]m_axis_tdata;
-  wire [9:0]m_axis_tdest;
+  wire [7:0]m_axis_tdata;
+  wire [0:0]m_axis_tdest;
   wire m_axis_tlast;
   wire m_axis_tready;
   wire [0:0]m_axis_tuser;
@@ -61,14 +61,14 @@ module system_axis_subset_converter_0_1
   wire NLW_inst_sparse_tkeep_removed_UNCONNECTED;
   wire NLW_inst_transfer_dropped_UNCONNECTED;
   wire [0:0]NLW_inst_m_axis_tid_UNCONNECTED;
-  wire [1:0]NLW_inst_m_axis_tkeep_UNCONNECTED;
-  wire [1:0]NLW_inst_m_axis_tstrb_UNCONNECTED;
+  wire [0:0]NLW_inst_m_axis_tkeep_UNCONNECTED;
+  wire [0:0]NLW_inst_m_axis_tstrb_UNCONNECTED;
 
   (* C_DEFAULT_TLAST = "0" *) 
   (* C_FAMILY = "zynq" *) 
   (* C_M_AXIS_SIGNAL_SET = "32'b00000000000000000000000011010011" *) 
-  (* C_M_AXIS_TDATA_WIDTH = "16" *) 
-  (* C_M_AXIS_TDEST_WIDTH = "10" *) 
+  (* C_M_AXIS_TDATA_WIDTH = "8" *) 
+  (* C_M_AXIS_TDEST_WIDTH = "1" *) 
   (* C_M_AXIS_TID_WIDTH = "1" *) 
   (* C_M_AXIS_TUSER_WIDTH = "1" *) 
   (* C_S_AXIS_SIGNAL_SET = "32'b00000000000000000000000011010011" *) 
@@ -102,10 +102,10 @@ module system_axis_subset_converter_0_1
         .m_axis_tdata(m_axis_tdata),
         .m_axis_tdest(m_axis_tdest),
         .m_axis_tid(NLW_inst_m_axis_tid_UNCONNECTED[0]),
-        .m_axis_tkeep(NLW_inst_m_axis_tkeep_UNCONNECTED[1:0]),
+        .m_axis_tkeep(NLW_inst_m_axis_tkeep_UNCONNECTED[0]),
         .m_axis_tlast(m_axis_tlast),
         .m_axis_tready(m_axis_tready),
-        .m_axis_tstrb(NLW_inst_m_axis_tstrb_UNCONNECTED[1:0]),
+        .m_axis_tstrb(NLW_inst_m_axis_tstrb_UNCONNECTED[0]),
         .m_axis_tuser(m_axis_tuser),
         .m_axis_tvalid(m_axis_tvalid),
         .s_axis_tdata(s_axis_tdata),
@@ -122,7 +122,7 @@ module system_axis_subset_converter_0_1
 endmodule
 
 (* C_DEFAULT_TLAST = "0" *) (* C_FAMILY = "zynq" *) (* C_M_AXIS_SIGNAL_SET = "32'b00000000000000000000000011010011" *) 
-(* C_M_AXIS_TDATA_WIDTH = "16" *) (* C_M_AXIS_TDEST_WIDTH = "10" *) (* C_M_AXIS_TID_WIDTH = "1" *) 
+(* C_M_AXIS_TDATA_WIDTH = "8" *) (* C_M_AXIS_TDEST_WIDTH = "1" *) (* C_M_AXIS_TID_WIDTH = "1" *) 
 (* C_M_AXIS_TUSER_WIDTH = "1" *) (* C_S_AXIS_SIGNAL_SET = "32'b00000000000000000000000011010011" *) (* C_S_AXIS_TDATA_WIDTH = "16" *) 
 (* C_S_AXIS_TDEST_WIDTH = "10" *) (* C_S_AXIS_TID_WIDTH = "1" *) (* C_S_AXIS_TUSER_WIDTH = "1" *) 
 (* G_INDX_SS_TDATA = "1" *) (* G_INDX_SS_TDEST = "6" *) (* G_INDX_SS_TID = "5" *) 
@@ -170,18 +170,17 @@ module system_axis_subset_converter_0_1_top_system_axis_subset_converter_0_1
   input [0:0]s_axis_tuser;
   output m_axis_tvalid;
   input m_axis_tready;
-  output [15:0]m_axis_tdata;
-  output [1:0]m_axis_tstrb;
-  output [1:0]m_axis_tkeep;
+  output [7:0]m_axis_tdata;
+  output [0:0]m_axis_tstrb;
+  output [0:0]m_axis_tkeep;
   output m_axis_tlast;
   output [0:0]m_axis_tid;
-  output [9:0]m_axis_tdest;
+  output [0:0]m_axis_tdest;
   output [0:0]m_axis_tuser;
   output transfer_dropped;
   output sparse_tkeep_removed;
 
   wire \<const0> ;
-  wire \<const1> ;
   wire m_axis_tready;
   wire [15:0]s_axis_tdata;
   wire [9:0]s_axis_tdest;
@@ -189,21 +188,11 @@ module system_axis_subset_converter_0_1_top_system_axis_subset_converter_0_1
   wire [0:0]s_axis_tuser;
   wire s_axis_tvalid;
 
-  assign m_axis_tdata[15] = \<const1> ;
-  assign m_axis_tdata[14] = \<const0> ;
-  assign m_axis_tdata[13] = \<const0> ;
-  assign m_axis_tdata[12] = \<const0> ;
-  assign m_axis_tdata[11] = \<const0> ;
-  assign m_axis_tdata[10] = \<const0> ;
-  assign m_axis_tdata[9] = \<const0> ;
-  assign m_axis_tdata[8] = \<const0> ;
   assign m_axis_tdata[7:0] = s_axis_tdata[9:2];
-  assign m_axis_tdest[9:0] = s_axis_tdest;
+  assign m_axis_tdest[0] = s_axis_tdest[0];
   assign m_axis_tid[0] = \<const0> ;
-  assign m_axis_tkeep[1] = \<const0> ;
   assign m_axis_tkeep[0] = \<const0> ;
   assign m_axis_tlast = s_axis_tlast;
-  assign m_axis_tstrb[1] = \<const0> ;
   assign m_axis_tstrb[0] = \<const0> ;
   assign m_axis_tuser[0] = s_axis_tuser;
   assign m_axis_tvalid = s_axis_tvalid;
@@ -212,8 +201,6 @@ module system_axis_subset_converter_0_1_top_system_axis_subset_converter_0_1
   assign transfer_dropped = \<const0> ;
   GND GND
        (.G(\<const0> ));
-  VCC VCC
-       (.P(\<const1> ));
 endmodule
 `ifndef GLBL
 `define GLBL

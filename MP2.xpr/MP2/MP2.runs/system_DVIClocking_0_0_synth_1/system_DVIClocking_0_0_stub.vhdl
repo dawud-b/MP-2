@@ -1,8 +1,8 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
--- Date        : Fri Feb 27 09:30:22 2026
--- Host        : CO2041-03 running 64-bit major release  (build 9200)
+-- Date        : Sun Mar  8 18:05:19 2026
+-- Host        : CO2041-13 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 --               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ system_DVIClocking_0_0_stub.vhdl
 -- Design      : system_DVIClocking_0_0

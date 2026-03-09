@@ -94,12 +94,12 @@ output wire m_axis_tvalid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TREADY" *)
 input wire m_axis_tready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TDATA" *)
-output wire [15 : 0] m_axis_tdata;
+output wire [7 : 0] m_axis_tdata;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TLAST" *)
 output wire m_axis_tlast;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TDEST" *)
-output wire [9 : 0] m_axis_tdest;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXIS, TDATA_NUM_BYTES 2, TDEST_WIDTH 10, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 150000000, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0" *)
+output wire [0 : 0] m_axis_tdest;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXIS, TDATA_NUM_BYTES 1, TDEST_WIDTH 1, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 150000000, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TUSER" *)
 output wire [0 : 0] m_axis_tuser;
 
@@ -110,9 +110,9 @@ output wire [0 : 0] m_axis_tuser;
     .C_S_AXIS_TDEST_WIDTH(10),
     .C_S_AXIS_TUSER_WIDTH(1),
     .C_S_AXIS_SIGNAL_SET('B00000000000000000000000011010011),
-    .C_M_AXIS_TDATA_WIDTH(16),
+    .C_M_AXIS_TDATA_WIDTH(8),
     .C_M_AXIS_TID_WIDTH(1),
-    .C_M_AXIS_TDEST_WIDTH(10),
+    .C_M_AXIS_TDEST_WIDTH(1),
     .C_M_AXIS_SIGNAL_SET('B00000000000000000000000011010011),
     .C_M_AXIS_TUSER_WIDTH(1),
     .C_DEFAULT_TLAST(0)

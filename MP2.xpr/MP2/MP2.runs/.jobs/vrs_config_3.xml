@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="system_DVIClocking_0_0_synth_1" LaunchDir="C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/system_DVIClocking_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_xbar_5_synth_1" LaunchDir="C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/system_xbar_5_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axis_subset_converter_0_1_synth_1" LaunchDir="C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/system_axis_subset_converter_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_cama_bta_0_synth_1" LaunchDir="C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/system_axi_cama_bta_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_clk_wiz_0_0_synth_1" LaunchDir="C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/system_clk_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_processing_system7_0_0_synth_1" LaunchDir="C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/system_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_rst_system_150M_0_synth_1" LaunchDir="C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/system_rst_system_150M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_xbar_4_synth_1" LaunchDir="C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/system_xbar_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_v_demosaic_0_0_synth_1" LaunchDir="C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/system_v_demosaic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_video_dynclk_0_synth_1" LaunchDir="C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/system_video_dynclk_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_vtg_0_synth_1" LaunchDir="C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/system_vtg_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_v_axi4s_vid_out_0_0_synth_1" LaunchDir="C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/system_v_axi4s_vid_out_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_iic_0_0_synth_1" LaunchDir="C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/system_axi_iic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_rst_vid_clk_dyn_0_synth_1" LaunchDir="C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/system_rst_vid_clk_dyn_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_rst_clk_wiz_0_50M_0_synth_1" LaunchDir="C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/system_rst_clk_wiz_0_50M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_v_proc_ss_0_0_synth_1" LaunchDir="C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/system_v_proc_ss_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="bd_2d50_csc_0_synth_1"/>
+	</Run>
+	<Run Id="system_v_proc_ss_1_0_synth_1" LaunchDir="C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/system_v_proc_ss_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="bd_ed01_hcr_0_synth_1"/>
+	</Run>
+	<Run Id="system_axi_cama_gpio_0_synth_1" LaunchDir="C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/system_axi_cama_gpio_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="system_axi_cama_bta_0_synth_1"/>
+	</Run>
+	<Run Id="bd_ed01_hcr_0_synth_1" LaunchDir="C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/bd_ed01_hcr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_2d50_csc_0_synth_1" LaunchDir="C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/bd_2d50_csc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axis_subset_converter_0_2_synth_1" LaunchDir="C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/system_axis_subset_converter_0_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_auto_cc_0_synth_1" LaunchDir="C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/system_auto_cc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_auto_cc_2_synth_1" LaunchDir="C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/system_auto_cc_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_auto_cc_1_synth_1" LaunchDir="C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/system_auto_cc_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="system_auto_cc_2_synth_1"/>
+	</Run>
+	<Run Id="synth_1" LaunchDir="C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="system_DVIClocking_0_0_synth_1"/>
+		<Parent Id="system_xbar_5_synth_1"/>
+		<Parent Id="system_axis_subset_converter_0_1_synth_1"/>
+		<Parent Id="system_axi_cama_bta_0_synth_1"/>
+		<Parent Id="system_clk_wiz_0_0_synth_1"/>
+		<Parent Id="system_processing_system7_0_0_synth_1"/>
+		<Parent Id="system_rst_system_150M_0_synth_1"/>
+		<Parent Id="system_xbar_4_synth_1"/>
+		<Parent Id="system_v_demosaic_0_0_synth_1"/>
+		<Parent Id="system_video_dynclk_0_synth_1"/>
+		<Parent Id="system_vtg_0_synth_1"/>
+		<Parent Id="system_v_axi4s_vid_out_0_0_synth_1"/>
+		<Parent Id="system_axi_iic_0_0_synth_1"/>
+		<Parent Id="system_rst_vid_clk_dyn_0_synth_1"/>
+		<Parent Id="system_rst_clk_wiz_0_50M_0_synth_1"/>
+		<Parent Id="system_v_proc_ss_0_0_synth_1"/>
+		<Parent Id="system_v_proc_ss_1_0_synth_1"/>
+		<Parent Id="system_axi_cama_gpio_0_synth_1"/>
+		<Parent Id="system_axis_subset_converter_0_2_synth_1"/>
+		<Parent Id="system_auto_cc_0_synth_1"/>
+		<Parent Id="system_auto_cc_2_synth_1"/>
+		<Parent Id="system_auto_cc_1_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

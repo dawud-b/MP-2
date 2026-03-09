@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Tue Feb 17 18:28:59 2026
-// Host        : DESKTOP-8IONJAA running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub -rename_top system_vtg_0 -prefix
-//               system_vtg_0_ system_vtg_0_stub.v
+// Date        : Sun Mar  8 18:05:52 2026
+// Host        : CO2041-13 running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode synth_stub
+//               c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_vtg_0/system_vtg_0_stub.v
 // Design      : system_vtg_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg484-1

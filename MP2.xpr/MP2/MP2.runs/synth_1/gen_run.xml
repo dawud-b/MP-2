@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1772209955">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1773011679">
   <File Type="PA-TCL" Name="system_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="system_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="system_wrapper_reports.tcl"/>
@@ -99,19 +99,35 @@
   <Strategy Version="1" Minor="2">
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design">
+      <Option Id="FsmExtraction">0</Option>
       <Option Id="Directive">0</Option>
       <Option Id="FlattenHierarchy">1</Option>
-      <Option Id="FsmExtraction">0</Option>
     </Step>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="bd_22c6_vfb_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_clk_wiz_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_DVIClocking_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_xbar_5"/>
-  <BlockFileSet Type="BlockSrcs" Name="system_axi_vdma_a_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="system_mipi_csi2_rx_subsyst_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_axis_subset_converter_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_axi_cama_bta_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_axi_iic_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="bd_22c6_r_sync_0"/>
   <BlockFileSet Type="BlockSrcs" Name="bd_22c6_phy_0"/>
   <BlockFileSet Type="BlockSrcs" Name="bd_22c6_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bd_ed01_hcr_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_v_demosaic_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_rst_system_150M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="bd_22c6_rx_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="bd_22c6_vfb_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_xbar_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_video_dynclk_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_vtg_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_v_axi4s_vid_out_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_rst_vid_clk_dyn_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_rst_clk_wiz_0_50M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_v_proc_ss_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_v_proc_ss_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_axi_cama_gpio_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bd_2d50_csc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_axis_subset_converter_0_2"/>
 </GenRun>

@@ -1,10 +1,10 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
--- Date        : Tue Nov 19 20:32:11 2024
--- Host        : CO3050-TEST running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub -rename_top system_clk_wiz_0_0 -prefix
---               system_clk_wiz_0_0_ system_clk_wiz_0_0_stub.vhdl
+-- Date        : Sun Mar  8 18:05:18 2026
+-- Host        : CO2041-13 running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode synth_stub
+--               c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0_stub.vhdl
 -- Design      : system_clk_wiz_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg484-1

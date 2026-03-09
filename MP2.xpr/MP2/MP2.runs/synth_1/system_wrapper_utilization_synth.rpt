@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Fri Feb 27 10:34:08 2026
-| Host         : CO2041-03 running 64-bit major release  (build 9200)
+| Date         : Sun Mar  8 18:15:06 2026
+| Host         : CO2041-13 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file system_wrapper_utilization_synth.rpt -pb system_wrapper_utilization_synth.pb
 | Design       : system_wrapper
 | Device       : 7z020clg484-1
@@ -162,6 +162,9 @@ Table of Contents
 | system_xbar_4                    |    1 |
 | system_vtg_0                     |    1 |
 | system_video_dynclk_0            |    1 |
+| system_v_proc_ss_1_0             |    1 |
+| system_v_proc_ss_0_0             |    1 |
+| system_v_demosaic_0_0            |    1 |
 | system_v_axi4s_vid_out_0_0       |    1 |
 | system_s00_regslice_0            |    1 |
 | system_rst_vid_clk_dyn_0         |    1 |
@@ -170,6 +173,7 @@ Table of Contents
 | system_processing_system7_0_0    |    1 |
 | system_mipi_csi2_rx_subsyst_0_0  |    1 |
 | system_clk_wiz_0_0               |    1 |
+| system_axis_subset_converter_0_2 |    1 |
 | system_axis_subset_converter_0_1 |    1 |
 | system_axi_vdma_a_0              |    1 |
 | system_axi_iic_0_0               |    1 |
@@ -178,6 +182,9 @@ Table of Contents
 | system_auto_pc_2                 |    1 |
 | system_auto_pc_1                 |    1 |
 | system_auto_pc_0                 |    1 |
+| system_auto_cc_2                 |    1 |
+| system_auto_cc_1                 |    1 |
+| system_auto_cc_0                 |    1 |
 | system_DVIClocking_0_0           |    1 |
 +----------------------------------+------+
 

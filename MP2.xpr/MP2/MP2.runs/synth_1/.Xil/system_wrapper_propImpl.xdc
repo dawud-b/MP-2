@@ -5,11 +5,11 @@ set_property SRC_FILE_INFO {cfile:c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs
 set_property SRC_FILE_INFO {cfile:C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/constrs_1/new/MP2.xdc rfile:../../../MP2.srcs/constrs_1/new/MP2.xdc id:5} [current_design]
 current_instance system_i/clk_wiz_0
 set_property src_info {type:SCOPED_XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
-create_generated_clock -source [get_ports clk_in1] -edges {1 2 3} -edge_shift {0.000 -1.667 -3.333} [get_ports {}]
-set_property src_info {type:SCOPED_XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
-create_generated_clock -source [get_ports clk_in1] -edges {1 2 3} -edge_shift {0.000 5.000 10.000} [get_ports {}]
-set_property src_info {type:SCOPED_XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]
 create_generated_clock -source [get_ports clk_in1] -edges {1 2 3} -edge_shift {0.000 -2.500 -5.000} [get_ports {}]
+set_property src_info {type:SCOPED_XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
+create_generated_clock -source [get_ports clk_in1] -edges {1 2 3} -edge_shift {0.000 -1.667 -3.333} [get_ports {}]
+set_property src_info {type:SCOPED_XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]
+create_generated_clock -source [get_ports clk_in1] -edges {1 2 3} -edge_shift {0.000 5.000 10.000} [get_ports {}]
 current_instance
 current_instance system_i/processing_system7_0
 set_property src_info {type:SCOPED_XDC file:2 line:2 export:INPUT save:INPUT read:READ} [current_design]

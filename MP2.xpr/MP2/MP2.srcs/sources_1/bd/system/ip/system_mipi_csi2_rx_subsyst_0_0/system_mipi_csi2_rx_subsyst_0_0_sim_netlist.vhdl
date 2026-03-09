@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
 -- Date        : Fri Feb 27 10:33:42 2026
 -- Host        : CO2041-03 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_mipi_csi2_rx_subsyst_0_0/system_mipi_csi2_rx_subsyst_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top system_mipi_csi2_rx_subsyst_0_0 -prefix
+--               system_mipi_csi2_rx_subsyst_0_0_ system_mipi_csi2_rx_subsyst_0_0_sim_netlist.vhdl
 -- Design      : system_mipi_csi2_rx_subsyst_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -58,8 +58,6 @@ entity system_mipi_csi2_rx_subsyst_0_0_bd_22c6 is
     video_out_tuser : out STD_LOGIC_VECTOR ( 0 to 0 );
     video_out_tvalid : out STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_mipi_csi2_rx_subsyst_0_0_bd_22c6 : entity is "bd_22c6";
   attribute hw_handoff : string;
   attribute hw_handoff of system_mipi_csi2_rx_subsyst_0_0_bd_22c6 : entity is "system_mipi_csi2_rx_subsyst_0_0.hwdef";
 end system_mipi_csi2_rx_subsyst_0_0_bd_22c6;

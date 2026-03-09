@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Tue Nov 19 20:34:55 2024
-// Host        : CO3050-TEST running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub -rename_top system_video_dynclk_0 -prefix
-//               system_video_dynclk_0_ system_video_dynclk_0_stub.v
+// Date        : Sun Mar  8 18:05:49 2026
+// Host        : CO2041-13 running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode synth_stub
+//               c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_video_dynclk_0/system_video_dynclk_0_stub.v
 // Design      : system_video_dynclk_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg484-1

@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 5
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg484-1
 
@@ -142,11 +141,31 @@ set_property used_in_implementation false [get_files -all c:/Users/zfsalti/488/M
 set_property used_in_synthesis false [get_files -all c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_mipi_csi2_rx_subsyst_0_0/system_mipi_csi2_rx_subsyst_0_0_impl.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_mipi_csi2_rx_subsyst_0_0/system_mipi_csi2_rx_subsyst_0_0_impl.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_mipi_csi2_rx_subsyst_0_0/system_mipi_csi2_rx_subsyst_0_0_fixed_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_v_demosaic_0_0/system_v_demosaic_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_v_demosaic_0_0/system_v_demosaic_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_v_proc_ss_0_0/bd_0/ip/ip_0/bd_2d50_csc_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_v_proc_ss_0_0/bd_0/ip/ip_0/bd_2d50_csc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_v_proc_ss_0_0/bd_0/bd_2d50_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_v_proc_ss_0_0/system_v_proc_ss_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_v_proc_ss_1_0/bd_0/ip/ip_0/bd_ed01_hcr_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_v_proc_ss_1_0/bd_0/ip/ip_0/bd_ed01_hcr_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_v_proc_ss_1_0/bd_0/bd_ed01_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_v_proc_ss_1_0/system_v_proc_ss_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_axis_subset_converter_0_2/system_axis_subset_converter_0_2_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_s00_regslice_0/system_s00_regslice_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_s00_regslice_0/system_s00_regslice_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_auto_pc_2/system_auto_pc_2_ooc.xdc]
+set_property used_in_synthesis false [get_files -all c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_auto_cc_1/system_auto_cc_1_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_auto_cc_1/system_auto_cc_1_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_auto_cc_1/system_auto_cc_1_ooc.xdc]
+set_property used_in_synthesis false [get_files -all c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_auto_cc_2/system_auto_cc_2_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_auto_cc_2/system_auto_cc_2_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_auto_cc_2/system_auto_cc_2_ooc.xdc]
 set_property used_in_implementation false [get_files -all C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/system_ooc.xdc]
 
 OPTRACE "Adding files" END { }
