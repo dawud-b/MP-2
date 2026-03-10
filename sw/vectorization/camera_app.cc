@@ -264,15 +264,20 @@ void camera_loop(void)
 		  uint16x8_t reds_left_align = vextq_u16(merged_reds, merged_reds, 1);
 		  uint16x8_t blues_left_align = vextq_u16(blues, blues, 1);
 
-		  uint16x8_t green_condensed1 = vrhaddq_u16(merged_greens, vrhaddq_u16(bottom_greens, bottom_greens_left_aligned));
+		  uint16x8_t green_condensed1 = vrhaddq_u16(merged_greens, vrhaddq_u16(bottom_greens, bottom_greens_left_align));
 		  // TODO: interleave green_condensed1 with bottom_greens_left_align
 
-		  uint16x8_t red_condensed1 = vrhaddq_u16(merged_reds, reds_left_aligned);
+		  uint16x8_t red_condensed1 = vrhaddq_u16(merged_reds, reds_left_align);
 		  // TODO: interleave red_condensed1 with merged_reds
 
 		  uint16x8_t blue_condensed1 = vrhaddq_u16(blues, blues_left_align);
 		  // TODO: interleave blues with blues_left_align
 
+		  // 0.183 0.614 0.062
+		  // -0.101 -0.338 0.439
+		  // 0.439 -0.399 -0.04
+
+		  //
 
 
 		  for (int col = 0; col < 1920; col++) {
