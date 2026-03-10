@@ -273,13 +273,9 @@ void camera_loop(void)
 		  uint16x8_t blue_condensed1 = vrhaddq_u16(blues, blues_left_align);
 		  // TODO: interleave blues with blues_left_align
 
-		  // 0.183 0.614 0.062
-		  // -0.101 -0.338 0.439
-		  // 0.439 -0.399 -0.04
+      // not done yet
 
-		  //
-
-
+      // old implementation
 		  for (int col = 0; col < 1920; col++) {
 
 			  XTime_GetTime(&test1);
