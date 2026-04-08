@@ -2669,26 +2669,61 @@
       <spirit:name>CLK_LANE_IO_LOC</spirit:name>
       <spirit:displayName>Clock Lane LOC</spirit:displayName>
       <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.CLK_LANE_IO_LOC" spirit:choiceRef="choice_list_6f5507b7" spirit:order="56">None</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.CLK_LANE_IO_LOC">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>DATA_LANE0_IO_LOC</spirit:name>
       <spirit:displayName>Data Lane0 LOC</spirit:displayName>
       <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.DATA_LANE0_IO_LOC" spirit:choiceRef="choice_list_6f5507b7" spirit:order="57">None</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.DATA_LANE0_IO_LOC">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>DATA_LANE1_IO_LOC</spirit:name>
       <spirit:displayName>Data Lane1 LOC</spirit:displayName>
       <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.DATA_LANE1_IO_LOC" spirit:choiceRef="choice_list_6f5507b7" spirit:order="58">None</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.DATA_LANE1_IO_LOC">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>DATA_LANE2_IO_LOC</spirit:name>
       <spirit:displayName>Data Lane2 LOC</spirit:displayName>
       <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.DATA_LANE2_IO_LOC" spirit:choiceRef="choice_list_6f5507b7" spirit:order="59">None</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.DATA_LANE2_IO_LOC">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>DATA_LANE3_IO_LOC</spirit:name>
       <spirit:displayName>Data Lane3 LOC</spirit:displayName>
       <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.DATA_LANE3_IO_LOC" spirit:choiceRef="choice_list_6f5507b7" spirit:order="60">None</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.DATA_LANE3_IO_LOC">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>DATA_LANE0_BYTE</spirit:name>
@@ -2706,6 +2741,13 @@
       <spirit:name>DATA_LANE1_BYTE</spirit:name>
       <spirit:displayName>Data Lane 1 Byte</spirit:displayName>
       <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.DATA_LANE1_BYTE" spirit:choiceRef="choice_list_2dc23030" spirit:order="62">All_Byte</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.DATA_LANE1_BYTE">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>DATA_LANE2_BYTE</spirit:name>

@@ -91,7 +91,7 @@ set_property ip_output_repo c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.cache/ip [
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_axis_subset_converter_0_2/system_axis_subset_converter_0_2.xci
+read_ip -quiet C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_axis_subset_converter_0_2/system_axis_subset_converter_0_2.xci
 set_property used_in_implementation false [get_files -all c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_axis_subset_converter_0_2/system_axis_subset_converter_0_2_ooc.xdc]
 
 OPTRACE "Adding files" END { }

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Mar  9 03:20:06 2026" VIVADOVERSION="2020.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Apr  8 12:51:12 2026" VIVADOVERSION="2020.1">
 
   <SYSTEMINFO ARCH="zynq" BOARD="em.avnet.com:zed:part0:1.4" DEVICE="7z020" NAME="bd_22c6" PACKAGE="clg484" SPEEDGRADE="-1"/>
 
@@ -55,44 +55,34 @@
         <CONNECTION INSTANCE="vfb_0" PORT="vfb_arstn"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="mipi_phy_if_clk_hs_n" SIGIS="undef" SIGNAME="phy_clk_hs_rxn">
+    <PORT DIR="O" LEFT="15" NAME="video_out_tdata" RIGHT="0" SIGIS="undef" SIGNAME="vfb_0_vfb_data">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="phy" PORT="clk_hs_rxn"/>
+        <CONNECTION INSTANCE="vfb_0" PORT="vfb_data"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="mipi_phy_if_clk_hs_p" SIGIS="undef" SIGNAME="phy_clk_hs_rxp">
+    <PORT DIR="O" LEFT="9" NAME="video_out_tdest" RIGHT="0" SIGIS="undef" SIGNAME="vfb_0_vfb_vcdt">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="phy" PORT="clk_hs_rxp"/>
+        <CONNECTION INSTANCE="vfb_0" PORT="vfb_vcdt"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="mipi_phy_if_clk_lp_n" SIGIS="undef" SIGNAME="phy_clk_lp_rxn">
+    <PORT DIR="O" NAME="video_out_tlast" SIGIS="undef" SIGNAME="vfb_0_vfb_eol">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="phy" PORT="clk_lp_rxn"/>
+        <CONNECTION INSTANCE="vfb_0" PORT="vfb_eol"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="mipi_phy_if_clk_lp_p" SIGIS="undef" SIGNAME="phy_clk_lp_rxp">
+    <PORT DIR="I" NAME="video_out_tready" SIGIS="undef" SIGNAME="vfb_0_vfb_ready">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="phy" PORT="clk_lp_rxp"/>
+        <CONNECTION INSTANCE="vfb_0" PORT="vfb_ready"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" LEFT="1" NAME="mipi_phy_if_data_hs_n" RIGHT="0" SIGIS="undef" SIGNAME="phy_data_hs_rxn">
+    <PORT DIR="O" LEFT="0" NAME="video_out_tuser" RIGHT="0" SIGIS="undef" SIGNAME="vfb_0_vfb_sof">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="phy" PORT="data_hs_rxn"/>
+        <CONNECTION INSTANCE="vfb_0" PORT="vfb_sof"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" LEFT="1" NAME="mipi_phy_if_data_hs_p" RIGHT="0" SIGIS="undef" SIGNAME="phy_data_hs_rxp">
+    <PORT DIR="O" NAME="video_out_tvalid" SIGIS="undef" SIGNAME="vfb_0_vfb_valid">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="phy" PORT="data_hs_rxp"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="1" NAME="mipi_phy_if_data_lp_n" RIGHT="0" SIGIS="undef" SIGNAME="phy_data_lp_rxn">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="phy" PORT="data_lp_rxn"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="1" NAME="mipi_phy_if_data_lp_p" RIGHT="0" SIGIS="undef" SIGNAME="phy_data_lp_rxp">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="phy" PORT="data_lp_rxp"/>
+        <CONNECTION INSTANCE="vfb_0" PORT="vfb_valid"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" LEFT="12" NAME="csirxss_s_axi_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="xbar_s_axi_awaddr">
@@ -190,34 +180,44 @@
         <CONNECTION INSTANCE="xbar" PORT="s_axi_rready"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="15" NAME="video_out_tdata" RIGHT="0" SIGIS="undef" SIGNAME="vfb_0_vfb_data">
+    <PORT DIR="I" NAME="mipi_phy_if_clk_hs_n" SIGIS="undef" SIGNAME="phy_clk_hs_rxn">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="vfb_0" PORT="vfb_data"/>
+        <CONNECTION INSTANCE="phy" PORT="clk_hs_rxn"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="9" NAME="video_out_tdest" RIGHT="0" SIGIS="undef" SIGNAME="vfb_0_vfb_vcdt">
+    <PORT DIR="I" NAME="mipi_phy_if_clk_hs_p" SIGIS="undef" SIGNAME="phy_clk_hs_rxp">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="vfb_0" PORT="vfb_vcdt"/>
+        <CONNECTION INSTANCE="phy" PORT="clk_hs_rxp"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="video_out_tlast" SIGIS="undef" SIGNAME="vfb_0_vfb_eol">
+    <PORT DIR="I" NAME="mipi_phy_if_clk_lp_n" SIGIS="undef" SIGNAME="phy_clk_lp_rxn">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="vfb_0" PORT="vfb_eol"/>
+        <CONNECTION INSTANCE="phy" PORT="clk_lp_rxn"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="video_out_tready" SIGIS="undef" SIGNAME="vfb_0_vfb_ready">
+    <PORT DIR="I" NAME="mipi_phy_if_clk_lp_p" SIGIS="undef" SIGNAME="phy_clk_lp_rxp">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="vfb_0" PORT="vfb_ready"/>
+        <CONNECTION INSTANCE="phy" PORT="clk_lp_rxp"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="0" NAME="video_out_tuser" RIGHT="0" SIGIS="undef" SIGNAME="vfb_0_vfb_sof">
+    <PORT DIR="I" LEFT="1" NAME="mipi_phy_if_data_hs_n" RIGHT="0" SIGIS="undef" SIGNAME="phy_data_hs_rxn">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="vfb_0" PORT="vfb_sof"/>
+        <CONNECTION INSTANCE="phy" PORT="data_hs_rxn"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="video_out_tvalid" SIGIS="undef" SIGNAME="vfb_0_vfb_valid">
+    <PORT DIR="I" LEFT="1" NAME="mipi_phy_if_data_hs_p" RIGHT="0" SIGIS="undef" SIGNAME="phy_data_hs_rxp">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="vfb_0" PORT="vfb_valid"/>
+        <CONNECTION INSTANCE="phy" PORT="data_hs_rxp"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="1" NAME="mipi_phy_if_data_lp_n" RIGHT="0" SIGIS="undef" SIGNAME="phy_data_lp_rxn">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="phy" PORT="data_lp_rxn"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="1" NAME="mipi_phy_if_data_lp_p" RIGHT="0" SIGIS="undef" SIGNAME="phy_data_lp_rxp">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="phy" PORT="data_lp_rxp"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>

@@ -21,9 +21,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 21568
+INFO: [Synth 8-7075] Helper process launched with PID 14956
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1013.453 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1013.820 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'system_wrapper' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:64]
 INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:36238' bound to instance 'cam_iic_scl_iobuf' of component 'IOBUF' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:189]
@@ -46,67 +46,65 @@ INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.1/scripts
 INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:36238' bound to instance 'cama_gpio_tri_iobuf_3' of component 'IOBUF' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:266]
 INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:36238' bound to instance 'hdmi_iic_scl_iobuf' of component 'IOBUF' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:273]
 INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:36238' bound to instance 'hdmi_iic_sda_iobuf' of component 'IOBUF' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:280]
-INFO: [Synth 8-3491] module 'system' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:7098' bound to instance 'system_i' of component 'system' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:287]
-INFO: [Synth 8-638] synthesizing module 'system' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:7166]
-INFO: [Synth 8-3491] module 'system_DVIClocking_0_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_DVIClocking_0_0_stub.vhdl:5' bound to instance 'DVIClocking_0' of component 'system_DVIClocking_0_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:8532]
-INFO: [Synth 8-638] synthesizing module 'system_DVIClocking_0_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_DVIClocking_0_0_stub.vhdl:16]
-INFO: [Synth 8-3491] module 'system_axi_cama_bta_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_axi_cama_bta_0_stub.vhdl:5' bound to instance 'axi_cama_bta' of component 'system_axi_cama_bta_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:8540]
-INFO: [Synth 8-638] synthesizing module 'system_axi_cama_bta_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_axi_cama_bta_0_stub.vhdl:33]
-INFO: [Synth 8-3491] module 'system_axi_cama_gpio_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_axi_cama_gpio_0_stub.vhdl:5' bound to instance 'axi_cama_gpio' of component 'system_axi_cama_gpio_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:8565]
-INFO: [Synth 8-638] synthesizing module 'system_axi_cama_gpio_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_axi_cama_gpio_0_stub.vhdl:33]
-INFO: [Synth 8-3491] module 'system_axi_gpio_0_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'system_axi_gpio_0_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:8590]
-INFO: [Synth 8-638] synthesizing module 'system_axi_gpio_0_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_axi_gpio_0_0_stub.vhdl:32]
-INFO: [Synth 8-3491] module 'system_axi_iic_0_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_axi_iic_0_0_stub.vhdl:5' bound to instance 'axi_iic_hdmi' of component 'system_axi_iic_0_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:8614]
-INFO: [Synth 8-638] synthesizing module 'system_axi_iic_0_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_axi_iic_0_0_stub.vhdl:38]
-INFO: [Synth 8-638] synthesizing module 'system_axi_mem_intercon_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:3350]
-INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1P403ZT' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:2568]
-INFO: [Synth 8-3491] module 'system_auto_pc_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'system_auto_pc_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:2667]
-INFO: [Synth 8-638] synthesizing module 'system_auto_pc_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_auto_pc_0_stub.vhdl:44]
-INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1P403ZT' (2#1) [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:2568]
-INFO: [Synth 8-256] done synthesizing module 'system_axi_mem_intercon_0' (3#1) [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:3350]
-INFO: [Synth 8-638] synthesizing module 'system_axi_mem_intercon_1_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:3638]
+INFO: [Synth 8-3491] module 'system' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:6879' bound to instance 'system_i' of component 'system' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:287]
+INFO: [Synth 8-638] synthesizing module 'system' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:6947]
+INFO: [Synth 8-3491] module 'system_DVIClocking_0_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_DVIClocking_0_0_stub.vhdl:5' bound to instance 'DVIClocking_0' of component 'system_DVIClocking_0_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:8110]
+INFO: [Synth 8-638] synthesizing module 'system_DVIClocking_0_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_DVIClocking_0_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'system_axi_cama_bta_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_axi_cama_bta_0_stub.vhdl:5' bound to instance 'axi_cama_bta' of component 'system_axi_cama_bta_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:8118]
+INFO: [Synth 8-638] synthesizing module 'system_axi_cama_bta_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_axi_cama_bta_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'system_axi_cama_gpio_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_axi_cama_gpio_0_stub.vhdl:5' bound to instance 'axi_cama_gpio' of component 'system_axi_cama_gpio_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:8143]
+INFO: [Synth 8-638] synthesizing module 'system_axi_cama_gpio_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_axi_cama_gpio_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'system_axi_gpio_0_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'system_axi_gpio_0_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:8168]
+INFO: [Synth 8-638] synthesizing module 'system_axi_gpio_0_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_axi_gpio_0_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'system_axi_iic_0_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_axi_iic_0_0_stub.vhdl:5' bound to instance 'axi_iic_hdmi' of component 'system_axi_iic_0_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:8192]
+INFO: [Synth 8-638] synthesizing module 'system_axi_iic_0_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_axi_iic_0_0_stub.vhdl:38]
+INFO: [Synth 8-638] synthesizing module 'system_axi_mem_intercon_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:3008]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1P403ZT' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:2226]
+INFO: [Synth 8-3491] module 'system_auto_pc_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'system_auto_pc_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:2325]
+INFO: [Synth 8-638] synthesizing module 'system_auto_pc_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_auto_pc_0_stub.vhdl:44]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1P403ZT' (2#1) [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:2226]
+INFO: [Synth 8-256] done synthesizing module 'system_axi_mem_intercon_0' (3#1) [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:3008]
+INFO: [Synth 8-638] synthesizing module 'system_axi_mem_intercon_1_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:3296]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_13ZR4P2' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:100]
-INFO: [Synth 8-3491] module 'system_auto_pc_1' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_auto_pc_1_stub.vhdl:5' bound to instance 'auto_pc' of component 'system_auto_pc_1' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:343]
-INFO: [Synth 8-638] synthesizing module 'system_auto_pc_1' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_auto_pc_1_stub.vhdl:90]
+INFO: [Synth 8-3491] module 'system_auto_pc_1' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_auto_pc_1_stub.vhdl:5' bound to instance 'auto_pc' of component 'system_auto_pc_1' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:343]
+INFO: [Synth 8-638] synthesizing module 'system_auto_pc_1' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_auto_pc_1_stub.vhdl:90]
 INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_13ZR4P2' (4#1) [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:100]
-INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1AIV7DJ' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:2476]
-INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1AIV7DJ' (5#1) [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:2476]
-INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_2PLUVA' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:2791]
-INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_2PLUVA' (6#1) [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:2791]
-INFO: [Synth 8-638] synthesizing module 's02_couplers_imp_8W5GTW' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:2992]
-INFO: [Synth 8-256] done synthesizing module 's02_couplers_imp_8W5GTW' (7#1) [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:2992]
-INFO: [Synth 8-638] synthesizing module 's03_couplers_imp_13ID7MT' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:3193]
-INFO: [Synth 8-256] done synthesizing module 's03_couplers_imp_13ID7MT' (8#1) [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:3193]
-INFO: [Synth 8-3491] module 'system_xbar_4' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_xbar_4_stub.vhdl:5' bound to instance 'xbar' of component 'system_xbar_4' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:4615]
-INFO: [Synth 8-638] synthesizing module 'system_xbar_4' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_xbar_4_stub.vhdl:89]
-INFO: [Synth 8-256] done synthesizing module 'system_axi_mem_intercon_1_0' (9#1) [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:3638]
-INFO: [Synth 8-3491] module 'system_axi_vdma_a_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_axi_vdma_a_0_stub.vhdl:5' bound to instance 'axi_vdma_a' of component 'system_axi_vdma_a_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:8861]
-INFO: [Synth 8-638] synthesizing module 'system_axi_vdma_a_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_axi_vdma_a_0_stub.vhdl:79]
-INFO: [Synth 8-3491] module 'system_axis_subset_converter_0_1' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_axis_subset_converter_0_1_stub.vhdl:5' bound to instance 'axis_subset_converter_0' of component 'system_axis_subset_converter_0_1' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:8932]
-INFO: [Synth 8-638] synthesizing module 'system_axis_subset_converter_0_1' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_axis_subset_converter_0_1_stub.vhdl:25]
-INFO: [Synth 8-3491] module 'system_axis_subset_converter_0_2' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_axis_subset_converter_0_2_stub.vhdl:5' bound to instance 'axis_subset_converter_1' of component 'system_axis_subset_converter_0_2' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:8949]
-INFO: [Synth 8-638] synthesizing module 'system_axis_subset_converter_0_2' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_axis_subset_converter_0_2_stub.vhdl:31]
-INFO: [Synth 8-3491] module 'system_cama_gpio_dir_0' declared at 'c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_cama_gpio_dir_0/synth/system_cama_gpio_dir_0.v:57' bound to instance 'cama_gpio_dir' of component 'system_cama_gpio_dir_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:8972]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1AIV7DJ' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:2134]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1AIV7DJ' (5#1) [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:2134]
+INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_2PLUVA' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:2449]
+INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_2PLUVA' (6#1) [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:2449]
+INFO: [Synth 8-638] synthesizing module 's02_couplers_imp_8W5GTW' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:2650]
+INFO: [Synth 8-256] done synthesizing module 's02_couplers_imp_8W5GTW' (7#1) [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:2650]
+INFO: [Synth 8-638] synthesizing module 's03_couplers_imp_13ID7MT' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:2851]
+INFO: [Synth 8-256] done synthesizing module 's03_couplers_imp_13ID7MT' (8#1) [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:2851]
+INFO: [Synth 8-3491] module 'system_xbar_4' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_xbar_4_stub.vhdl:5' bound to instance 'xbar' of component 'system_xbar_4' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:4273]
+INFO: [Synth 8-638] synthesizing module 'system_xbar_4' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_xbar_4_stub.vhdl:89]
+INFO: [Synth 8-256] done synthesizing module 'system_axi_mem_intercon_1_0' (9#1) [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:3296]
+INFO: [Synth 8-3491] module 'system_axi_vdma_a_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_axi_vdma_a_0_stub.vhdl:5' bound to instance 'axi_vdma_a' of component 'system_axi_vdma_a_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:8439]
+INFO: [Synth 8-638] synthesizing module 'system_axi_vdma_a_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_axi_vdma_a_0_stub.vhdl:79]
+INFO: [Synth 8-3491] module 'system_axis_subset_converter_0_2' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_axis_subset_converter_0_2_stub.vhdl:5' bound to instance 'axis_subset_converter_1' of component 'system_axis_subset_converter_0_2' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:8510]
+INFO: [Synth 8-638] synthesizing module 'system_axis_subset_converter_0_2' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_axis_subset_converter_0_2_stub.vhdl:25]
+INFO: [Synth 8-3491] module 'system_cama_gpio_dir_0' declared at 'c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_cama_gpio_dir_0/synth/system_cama_gpio_dir_0.v:57' bound to instance 'cama_gpio_dir' of component 'system_cama_gpio_dir_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:8527]
 INFO: [Synth 8-6157] synthesizing module 'system_cama_gpio_dir_0' [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_cama_gpio_dir_0/synth/system_cama_gpio_dir_0.v:57]
 INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
 	Parameter CONST_VAL bound to: 1 - type: integer 
 	Parameter CONST_WIDTH bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (10#1) [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'system_cama_gpio_dir_0' (11#1) [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_cama_gpio_dir_0/synth/system_cama_gpio_dir_0.v:57]
-INFO: [Synth 8-3491] module 'system_cama_gpio_oen_0' declared at 'c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_cama_gpio_oen_0/synth/system_cama_gpio_oen_0.v:57' bound to instance 'cama_gpio_oen' of component 'system_cama_gpio_oen_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:8976]
+INFO: [Synth 8-3491] module 'system_cama_gpio_oen_0' declared at 'c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_cama_gpio_oen_0/synth/system_cama_gpio_oen_0.v:57' bound to instance 'cama_gpio_oen' of component 'system_cama_gpio_oen_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:8531]
 INFO: [Synth 8-6157] synthesizing module 'system_cama_gpio_oen_0' [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_cama_gpio_oen_0/synth/system_cama_gpio_oen_0.v:57]
 INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
 	Parameter CONST_VAL bound to: 0 - type: integer 
 	Parameter CONST_WIDTH bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' (11#1) [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'system_cama_gpio_oen_0' (12#1) [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_cama_gpio_oen_0/synth/system_cama_gpio_oen_0.v:57]
-INFO: [Synth 8-3491] module 'system_clk_wiz_0_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_clk_wiz_0_0_stub.vhdl:5' bound to instance 'clk_wiz_0' of component 'system_clk_wiz_0_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:8980]
-INFO: [Synth 8-638] synthesizing module 'system_clk_wiz_0_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_clk_wiz_0_0_stub.vhdl:16]
-INFO: [Synth 8-3491] module 'system_mipi_csi2_rx_subsyst_0_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_mipi_csi2_rx_subsyst_0_0_stub.vhdl:5' bound to instance 'mipi_csi2_rx_subsyst_0' of component 'system_mipi_csi2_rx_subsyst_0_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:8988]
-INFO: [Synth 8-638] synthesizing module 'system_mipi_csi2_rx_subsyst_0_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_mipi_csi2_rx_subsyst_0_0_stub.vhdl:52]
-INFO: [Synth 8-3491] module 'system_processing_system7_0_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'system_processing_system7_0_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:9032]
-INFO: [Synth 8-638] synthesizing module 'system_processing_system7_0_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_processing_system7_0_0_stub.vhdl:176]
-INFO: [Synth 8-638] synthesizing module 'system_ps7_0_axi_periph_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:5579]
+INFO: [Synth 8-3491] module 'system_clk_wiz_0_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_clk_wiz_0_0_stub.vhdl:5' bound to instance 'clk_wiz_0' of component 'system_clk_wiz_0_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:8535]
+INFO: [Synth 8-638] synthesizing module 'system_clk_wiz_0_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_clk_wiz_0_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'system_mipi_csi2_rx_subsyst_0_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_mipi_csi2_rx_subsyst_0_0_stub.vhdl:5' bound to instance 'mipi_csi2_rx_subsyst_0' of component 'system_mipi_csi2_rx_subsyst_0_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:8543]
+INFO: [Synth 8-638] synthesizing module 'system_mipi_csi2_rx_subsyst_0_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_mipi_csi2_rx_subsyst_0_0_stub.vhdl:52]
+INFO: [Synth 8-3491] module 'system_processing_system7_0_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'system_processing_system7_0_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:8587]
+INFO: [Synth 8-638] synthesizing module 'system_processing_system7_0_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_processing_system7_0_0_stub.vhdl:176]
+INFO: [Synth 8-638] synthesizing module 'system_ps7_0_axi_periph_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:5243]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1H7AUOX' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:471]
 INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1H7AUOX' (13#1) [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:471]
 INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_4Y7TYO' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:569]
@@ -117,52 +115,40 @@ INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_15QZ4LV' [C:/Users/zfs
 INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_15QZ4LV' (16#1) [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:771]
 INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_TUCI1Y' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:872]
 INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_TUCI1Y' (17#1) [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:872]
-INFO: [Synth 8-638] synthesizing module 'm05_couplers_imp_1IWS6WN' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:975]
-INFO: [Synth 8-3491] module 'system_auto_cc_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_auto_cc_0_stub.vhdl:5' bound to instance 'auto_cc' of component 'system_auto_cc_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:1105]
-INFO: [Synth 8-638] synthesizing module 'system_auto_cc_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_auto_cc_0_stub.vhdl:53]
-INFO: [Synth 8-256] done synthesizing module 'm05_couplers_imp_1IWS6WN' (18#1) [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:975]
-INFO: [Synth 8-638] synthesizing module 'm06_couplers_imp_1TJ5H51' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:1198]
-INFO: [Synth 8-256] done synthesizing module 'm06_couplers_imp_1TJ5H51' (19#1) [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:1198]
-INFO: [Synth 8-638] synthesizing module 'm07_couplers_imp_IE0TQS' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:1303]
-INFO: [Synth 8-256] done synthesizing module 'm07_couplers_imp_IE0TQS' (20#1) [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:1303]
-INFO: [Synth 8-638] synthesizing module 'm08_couplers_imp_1KSFJCE' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:1412]
-INFO: [Synth 8-3491] module 'system_auto_cc_1' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_auto_cc_1_stub.vhdl:5' bound to instance 'auto_cc' of component 'system_auto_cc_1' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:1542]
-INFO: [Synth 8-638] synthesizing module 'system_auto_cc_1' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_auto_cc_1_stub.vhdl:53]
-INFO: [Synth 8-256] done synthesizing module 'm08_couplers_imp_1KSFJCE' (21#1) [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:1412]
-INFO: [Synth 8-638] synthesizing module 'm09_couplers_imp_REJNZZ' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:1637]
-INFO: [Synth 8-3491] module 'system_auto_cc_2' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_auto_cc_2_stub.vhdl:5' bound to instance 'auto_cc' of component 'system_auto_cc_2' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:1767]
-INFO: [Synth 8-638] synthesizing module 'system_auto_cc_2' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_auto_cc_2_stub.vhdl:53]
-INFO: [Synth 8-256] done synthesizing module 'm09_couplers_imp_REJNZZ' (22#1) [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:1637]
-INFO: [Synth 8-638] synthesizing module 'm10_couplers_imp_FKDLSY' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:1860]
-INFO: [Synth 8-256] done synthesizing module 'm10_couplers_imp_FKDLSY' (23#1) [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:1860]
-INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_11SE3QO' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:1984]
-INFO: [Synth 8-3491] module 'system_auto_pc_2' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_auto_pc_2_stub.vhdl:5' bound to instance 'auto_pc' of component 'system_auto_pc_2' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:2287]
-INFO: [Synth 8-638] synthesizing module 'system_auto_pc_2' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_auto_pc_2_stub.vhdl:70]
-INFO: [Synth 8-3491] module 'system_s00_regslice_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_s00_regslice_0_stub.vhdl:5' bound to instance 's00_regslice' of component 'system_s00_regslice_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:2349]
-INFO: [Synth 8-638] synthesizing module 'system_s00_regslice_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_s00_regslice_0_stub.vhdl:89]
-INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_11SE3QO' (24#1) [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:1984]
-INFO: [Synth 8-3491] module 'system_xbar_5' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_xbar_5_stub.vhdl:5' bound to instance 'xbar' of component 'system_xbar_5' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:6868]
-INFO: [Synth 8-638] synthesizing module 'system_xbar_5' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_xbar_5_stub.vhdl:51]
-INFO: [Synth 8-256] done synthesizing module 'system_ps7_0_axi_periph_0' (25#1) [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:5579]
-INFO: [Synth 8-3491] module 'system_rst_clk_wiz_0_50M_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_rst_clk_wiz_0_50M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_0_50M' of component 'system_rst_clk_wiz_0_50M_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:9458]
-INFO: [Synth 8-638] synthesizing module 'system_rst_clk_wiz_0_50M_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_rst_clk_wiz_0_50M_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'system_rst_system_150M_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_rst_system_150M_0_stub.vhdl:5' bound to instance 'rst_system_150M' of component 'system_rst_system_150M_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:9471]
-INFO: [Synth 8-638] synthesizing module 'system_rst_system_150M_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_rst_system_150M_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'system_rst_vid_clk_dyn_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_rst_vid_clk_dyn_0_stub.vhdl:5' bound to instance 'rst_vid_clk_dyn' of component 'system_rst_vid_clk_dyn_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:9484]
-INFO: [Synth 8-638] synthesizing module 'system_rst_vid_clk_dyn_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_rst_vid_clk_dyn_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'system_v_axi4s_vid_out_0_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_v_axi4s_vid_out_0_0_stub.vhdl:5' bound to instance 'v_axi4s_vid_out_0' of component 'system_v_axi4s_vid_out_0_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:9497]
-INFO: [Synth 8-638] synthesizing module 'system_v_axi4s_vid_out_0_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_v_axi4s_vid_out_0_0_stub.vhdl:42]
-INFO: [Synth 8-3491] module 'system_v_demosaic_0_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_v_demosaic_0_0_stub.vhdl:5' bound to instance 'v_demosaic_0' of component 'system_v_demosaic_0_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:9531]
-INFO: [Synth 8-638] synthesizing module 'system_v_demosaic_0_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_v_demosaic_0_0_stub.vhdl:49]
-INFO: [Synth 8-3491] module 'system_v_proc_ss_0_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_v_proc_ss_0_0_stub.vhdl:5' bound to instance 'v_proc_ss_0' of component 'system_v_proc_ss_0_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:9572]
-INFO: [Synth 8-638] synthesizing module 'system_v_proc_ss_0_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_v_proc_ss_0_0_stub.vhdl:48]
-INFO: [Synth 8-3491] module 'system_v_proc_ss_1_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_v_proc_ss_1_0_stub.vhdl:5' bound to instance 'v_proc_ss_1' of component 'system_v_proc_ss_1_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:9612]
-INFO: [Synth 8-638] synthesizing module 'system_v_proc_ss_1_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_v_proc_ss_1_0_stub.vhdl:48]
-INFO: [Synth 8-3491] module 'system_video_dynclk_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_video_dynclk_0_stub.vhdl:5' bound to instance 'video_dynclk' of component 'system_video_dynclk_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:9652]
-INFO: [Synth 8-638] synthesizing module 'system_video_dynclk_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_video_dynclk_0_stub.vhdl:33]
-INFO: [Synth 8-3491] module 'system_vtg_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_vtg_0_stub.vhdl:5' bound to instance 'vtg' of component 'system_vtg_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:9677]
-INFO: [Synth 8-638] synthesizing module 'system_vtg_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-22372-CO2041-13/realtime/system_vtg_0_stub.vhdl:43]
-INFO: [Synth 8-3491] module 'system_xlconcat_0_0' declared at 'c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_xlconcat_0_0/synth/system_xlconcat_0_0.v:57' bound to instance 'xlconcat_0' of component 'system_xlconcat_0_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:9712]
+INFO: [Synth 8-638] synthesizing module 'm05_couplers_imp_1IWS6WN' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:977]
+INFO: [Synth 8-256] done synthesizing module 'm05_couplers_imp_1IWS6WN' (18#1) [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:977]
+INFO: [Synth 8-638] synthesizing module 'm06_couplers_imp_1TJ5H51' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:1084]
+INFO: [Synth 8-256] done synthesizing module 'm06_couplers_imp_1TJ5H51' (19#1) [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:1084]
+INFO: [Synth 8-638] synthesizing module 'm07_couplers_imp_IE0TQS' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:1189]
+INFO: [Synth 8-256] done synthesizing module 'm07_couplers_imp_IE0TQS' (20#1) [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:1189]
+INFO: [Synth 8-638] synthesizing module 'm08_couplers_imp_1KSFJCE' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:1300]
+INFO: [Synth 8-256] done synthesizing module 'm08_couplers_imp_1KSFJCE' (21#1) [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:1300]
+INFO: [Synth 8-638] synthesizing module 'm09_couplers_imp_REJNZZ' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:1411]
+INFO: [Synth 8-256] done synthesizing module 'm09_couplers_imp_REJNZZ' (22#1) [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:1411]
+INFO: [Synth 8-638] synthesizing module 'm10_couplers_imp_FKDLSY' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:1518]
+INFO: [Synth 8-256] done synthesizing module 'm10_couplers_imp_FKDLSY' (23#1) [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:1518]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_11SE3QO' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:1642]
+INFO: [Synth 8-3491] module 'system_auto_pc_2' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_auto_pc_2_stub.vhdl:5' bound to instance 'auto_pc' of component 'system_auto_pc_2' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:1945]
+INFO: [Synth 8-638] synthesizing module 'system_auto_pc_2' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_auto_pc_2_stub.vhdl:70]
+INFO: [Synth 8-3491] module 'system_s00_regslice_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_s00_regslice_0_stub.vhdl:5' bound to instance 's00_regslice' of component 'system_s00_regslice_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:2007]
+INFO: [Synth 8-638] synthesizing module 'system_s00_regslice_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_s00_regslice_0_stub.vhdl:89]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_11SE3QO' (24#1) [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:1642]
+INFO: [Synth 8-3491] module 'system_xbar_5' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_xbar_5_stub.vhdl:5' bound to instance 'xbar' of component 'system_xbar_5' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:6550]
+INFO: [Synth 8-638] synthesizing module 'system_xbar_5' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_xbar_5_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'system_ps7_0_axi_periph_0' (25#1) [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:5243]
+INFO: [Synth 8-3491] module 'system_rst_clk_wiz_0_50M_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_rst_clk_wiz_0_50M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_0_50M' of component 'system_rst_clk_wiz_0_50M_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:9019]
+INFO: [Synth 8-638] synthesizing module 'system_rst_clk_wiz_0_50M_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_rst_clk_wiz_0_50M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'system_rst_system_150M_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_rst_system_150M_0_stub.vhdl:5' bound to instance 'rst_system_150M' of component 'system_rst_system_150M_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:9032]
+INFO: [Synth 8-638] synthesizing module 'system_rst_system_150M_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_rst_system_150M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'system_rst_vid_clk_dyn_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_rst_vid_clk_dyn_0_stub.vhdl:5' bound to instance 'rst_vid_clk_dyn' of component 'system_rst_vid_clk_dyn_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:9045]
+INFO: [Synth 8-638] synthesizing module 'system_rst_vid_clk_dyn_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_rst_vid_clk_dyn_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'system_v_axi4s_vid_out_0_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_v_axi4s_vid_out_0_0_stub.vhdl:5' bound to instance 'v_axi4s_vid_out_0' of component 'system_v_axi4s_vid_out_0_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:9058]
+INFO: [Synth 8-638] synthesizing module 'system_v_axi4s_vid_out_0_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_v_axi4s_vid_out_0_0_stub.vhdl:42]
+INFO: [Synth 8-3491] module 'system_video_dynclk_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_video_dynclk_0_stub.vhdl:5' bound to instance 'video_dynclk' of component 'system_video_dynclk_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:9092]
+INFO: [Synth 8-638] synthesizing module 'system_video_dynclk_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_video_dynclk_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'system_vtg_0' declared at 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_vtg_0_stub.vhdl:5' bound to instance 'vtg' of component 'system_vtg_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:9117]
+INFO: [Synth 8-638] synthesizing module 'system_vtg_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/.Xil/Vivado-9424-CO2041-15/realtime/system_vtg_0_stub.vhdl:43]
+INFO: [Synth 8-3491] module 'system_xlconcat_0_0' declared at 'c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_xlconcat_0_0/synth/system_xlconcat_0_0.v:57' bound to instance 'xlconcat_0' of component 'system_xlconcat_0_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:9152]
 INFO: [Synth 8-6157] synthesizing module 'system_xlconcat_0_0' [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_xlconcat_0_0/synth/system_xlconcat_0_0.v:57]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
 	Parameter IN0_WIDTH bound to: 1 - type: integer 
@@ -201,7 +187,7 @@ INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [c:/Users/zf
 	Parameter NUM_PORTS bound to: 6 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat' (26#1) [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'system_xlconcat_0_0' (27#1) [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_xlconcat_0_0/synth/system_xlconcat_0_0.v:57]
-INFO: [Synth 8-3491] module 'system_xlconcat_1_0' declared at 'c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_xlconcat_1_0/synth/system_xlconcat_1_0.v:57' bound to instance 'xlconcat_1' of component 'system_xlconcat_1_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:9722]
+INFO: [Synth 8-3491] module 'system_xlconcat_1_0' declared at 'c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_xlconcat_1_0/synth/system_xlconcat_1_0.v:57' bound to instance 'xlconcat_1' of component 'system_xlconcat_1_0' [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:9162]
 INFO: [Synth 8-6157] synthesizing module 'system_xlconcat_1_0' [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_xlconcat_1_0/synth/system_xlconcat_1_0.v:57]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat__parameterized0' [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
 	Parameter IN0_WIDTH bound to: 6 - type: integer 
@@ -240,21 +226,21 @@ INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat__parameterize
 	Parameter NUM_PORTS bound to: 4 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat__parameterized0' (27#1) [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'system_xlconcat_1_0' (28#1) [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_xlconcat_1_0/synth/system_xlconcat_1_0.v:57]
-INFO: [Synth 8-256] done synthesizing module 'system' (29#1) [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:7166]
+INFO: [Synth 8-256] done synthesizing module 'system' (29#1) [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/synth/system.vhd:6947]
 INFO: [Synth 8-256] done synthesizing module 'system_wrapper' (30#1) [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:64]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1013.453 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1013.820 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1013.453 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1013.820 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1013.453 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1013.820 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1013.453 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1013.820 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -296,19 +282,11 @@ Parsing XDC File [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/sy
 Finished Parsing XDC File [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_xbar_5/system_xbar_5/system_xbar_5_in_context.xdc] for cell 'system_i/ps7_0_axi_periph/xbar'
 Parsing XDC File [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_axi_iic_0_0/system_axi_iic_0_0/system_axi_iic_0_0_in_context.xdc] for cell 'system_i/axi_iic_hdmi'
 Finished Parsing XDC File [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_axi_iic_0_0/system_axi_iic_0_0/system_axi_iic_0_0_in_context.xdc] for cell 'system_i/axi_iic_hdmi'
-Parsing XDC File [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_axis_subset_converter_0_1/system_axis_subset_converter_0_1/system_axis_subset_converter_0_1_in_context.xdc] for cell 'system_i/axis_subset_converter_0'
-Finished Parsing XDC File [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_axis_subset_converter_0_1/system_axis_subset_converter_0_1/system_axis_subset_converter_0_1_in_context.xdc] for cell 'system_i/axis_subset_converter_0'
 Parsing XDC File [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_mipi_csi2_rx_subsyst_0_0/system_mipi_csi2_rx_subsyst_0_0/system_mipi_csi2_rx_subsyst_0_0_in_context.xdc] for cell 'system_i/mipi_csi2_rx_subsyst_0'
 WARNING: [Vivado 12-584] No ports matched ''. [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_mipi_csi2_rx_subsyst_0_0/system_mipi_csi2_rx_subsyst_0_0/system_mipi_csi2_rx_subsyst_0_0_in_context.xdc:2]
 WARNING: [Vivado 12-584] No ports matched ''. [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_mipi_csi2_rx_subsyst_0_0/system_mipi_csi2_rx_subsyst_0_0/system_mipi_csi2_rx_subsyst_0_0_in_context.xdc:4]
 WARNING: [Vivado 12-584] No ports matched ''. [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_mipi_csi2_rx_subsyst_0_0/system_mipi_csi2_rx_subsyst_0_0/system_mipi_csi2_rx_subsyst_0_0_in_context.xdc:6]
 Finished Parsing XDC File [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_mipi_csi2_rx_subsyst_0_0/system_mipi_csi2_rx_subsyst_0_0/system_mipi_csi2_rx_subsyst_0_0_in_context.xdc] for cell 'system_i/mipi_csi2_rx_subsyst_0'
-Parsing XDC File [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_v_demosaic_0_0/system_v_demosaic_0_0/system_v_demosaic_0_0_in_context.xdc] for cell 'system_i/v_demosaic_0'
-Finished Parsing XDC File [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_v_demosaic_0_0/system_v_demosaic_0_0/system_v_demosaic_0_0_in_context.xdc] for cell 'system_i/v_demosaic_0'
-Parsing XDC File [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_v_proc_ss_0_0/system_v_proc_ss_0_0/system_v_proc_ss_0_0_in_context.xdc] for cell 'system_i/v_proc_ss_0'
-Finished Parsing XDC File [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_v_proc_ss_0_0/system_v_proc_ss_0_0/system_v_proc_ss_0_0_in_context.xdc] for cell 'system_i/v_proc_ss_0'
-Parsing XDC File [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_v_proc_ss_1_0/system_v_proc_ss_1_0/system_v_proc_ss_1_0_in_context.xdc] for cell 'system_i/v_proc_ss_1'
-Finished Parsing XDC File [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_v_proc_ss_1_0/system_v_proc_ss_1_0/system_v_proc_ss_1_0_in_context.xdc] for cell 'system_i/v_proc_ss_1'
 Parsing XDC File [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_axis_subset_converter_0_2/system_axis_subset_converter_0_2/system_axis_subset_converter_0_2_in_context.xdc] for cell 'system_i/axis_subset_converter_1'
 Finished Parsing XDC File [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_axis_subset_converter_0_2/system_axis_subset_converter_0_2/system_axis_subset_converter_0_2_in_context.xdc] for cell 'system_i/axis_subset_converter_1'
 Parsing XDC File [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0/system_axi_gpio_0_0_in_context.xdc] for cell 'system_i/axi_gpio_0'
@@ -321,12 +299,6 @@ Parsing XDC File [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/sy
 Finished Parsing XDC File [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_s00_regslice_0/system_s00_regslice_0/system_s00_regslice_0_in_context.xdc] for cell 'system_i/ps7_0_axi_periph/s00_couplers/s00_regslice'
 Parsing XDC File [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_auto_pc_2/system_auto_pc_2/system_auto_pc_2_in_context.xdc] for cell 'system_i/ps7_0_axi_periph/s00_couplers/auto_pc'
 Finished Parsing XDC File [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_auto_pc_2/system_auto_pc_2/system_auto_pc_2_in_context.xdc] for cell 'system_i/ps7_0_axi_periph/s00_couplers/auto_pc'
-Parsing XDC File [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0/system_auto_cc_0_in_context.xdc] for cell 'system_i/ps7_0_axi_periph/m05_couplers/auto_cc'
-Finished Parsing XDC File [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0/system_auto_cc_0_in_context.xdc] for cell 'system_i/ps7_0_axi_periph/m05_couplers/auto_cc'
-Parsing XDC File [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_auto_cc_1/system_auto_cc_1/system_auto_cc_2_in_context.xdc] for cell 'system_i/ps7_0_axi_periph/m08_couplers/auto_cc'
-Finished Parsing XDC File [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_auto_cc_1/system_auto_cc_1/system_auto_cc_2_in_context.xdc] for cell 'system_i/ps7_0_axi_periph/m08_couplers/auto_cc'
-Parsing XDC File [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_auto_cc_2/system_auto_cc_2/system_auto_cc_2_in_context.xdc] for cell 'system_i/ps7_0_axi_periph/m09_couplers/auto_cc'
-Finished Parsing XDC File [c:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/sources_1/bd/system/ip/system_auto_cc_2/system_auto_cc_2/system_auto_cc_2_in_context.xdc] for cell 'system_i/ps7_0_axi_periph/m09_couplers/auto_cc'
 Parsing XDC File [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/constrs_1/new/MP2.xdc]
 WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 33]]'. [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/constrs_1/new/MP2.xdc:76]
 WARNING: [Vivado 12-508] No pins matched '.*video_dynclk/.*/mmcm_adv_inst/CLKOUT0'. [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.srcs/constrs_1/new/MP2.xdc:101]
@@ -343,26 +315,26 @@ Parsing XDC File [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/dont_to
 Finished Parsing XDC File [C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1069.957 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1032.754 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 14 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 14 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1069.957 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1032.754 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'system_i/axi_vdma_a' at clock pin 'm_axi_mm2s_aclk' is different from the actual clock period '6.667', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '5.000' specified during out-of-context synthesis of instance 'system_i/mipi_csi2_rx_subsyst_0' at clock pin 'system_rst_out' is different from the actual clock period '4.761', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'system_i/rst_vid_clk_dyn' at clock pin 'slowest_sync_clk' is different from the actual clock period '1.347', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '13.468' specified during out-of-context synthesis of instance 'system_i/v_axi4s_vid_out_0' at clock pin 'vid_io_out_clk' is different from the actual clock period '1.347', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '13.468' specified during out-of-context synthesis of instance 'system_i/vtg' at clock pin 'clk' is different from the actual clock period '1.347', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1070.066 ; gain = 56.613
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1033.020 ; gain = 19.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1070.066 ; gain = 56.613
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1033.020 ; gain = 19.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -662,25 +634,18 @@ Applied set_property DONT_TOUCH = true for system_i/xlconcat_1. (constraint file
 Applied set_property DONT_TOUCH = true for system_i/axi_mem_intercon_1/xbar. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for system_i/ps7_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for system_i/axi_iic_hdmi. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for system_i/axis_subset_converter_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for system_i/mipi_csi2_rx_subsyst_0. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for system_i/v_demosaic_0. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for system_i/v_proc_ss_0. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for system_i/v_proc_ss_1. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for system_i/axis_subset_converter_1. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for system_i/axi_gpio_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for system_i/axi_mem_intercon/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for system_i/axi_mem_intercon_1/m00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for system_i/ps7_0_axi_periph/s00_couplers/s00_regslice. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for system_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for system_i/ps7_0_axi_periph/m05_couplers/auto_cc. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for system_i/ps7_0_axi_periph/m08_couplers/auto_cc. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for system_i/ps7_0_axi_periph/m09_couplers/auto_cc. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1070.066 ; gain = 56.613
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1033.020 ; gain = 19.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1070.066 ; gain = 56.613
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1033.020 ; gain = 19.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -702,19 +667,19 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1070.066 ; gain = 56.613
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1033.020 ; gain = 19.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1070.066 ; gain = 56.613
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1033.020 ; gain = 19.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1070.066 ; gain = 56.613
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1033.020 ; gain = 19.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -726,19 +691,19 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1070.066 ; gain = 56.613
+Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1036.156 ; gain = 22.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1070.066 ; gain = 56.613
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1036.156 ; gain = 22.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1070.066 ; gain = 56.613
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1036.156 ; gain = 22.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -751,32 +716,25 @@ Report BlackBoxes:
 |1     |system_auto_pc_0                 |         1|
 |2     |system_auto_pc_1                 |         1|
 |3     |system_xbar_4                    |         1|
-|4     |system_auto_cc_0                 |         1|
-|5     |system_auto_cc_1                 |         1|
-|6     |system_auto_cc_2                 |         1|
-|7     |system_auto_pc_2                 |         1|
-|8     |system_s00_regslice_0            |         1|
-|9     |system_xbar_5                    |         1|
-|10    |system_DVIClocking_0_0           |         1|
-|11    |system_axi_cama_bta_0            |         1|
-|12    |system_axi_cama_gpio_0           |         1|
-|13    |system_axi_gpio_0_0              |         1|
-|14    |system_axi_iic_0_0               |         1|
-|15    |system_axi_vdma_a_0              |         1|
-|16    |system_axis_subset_converter_0_1 |         1|
-|17    |system_axis_subset_converter_0_2 |         1|
-|18    |system_clk_wiz_0_0               |         1|
-|19    |system_mipi_csi2_rx_subsyst_0_0  |         1|
-|20    |system_processing_system7_0_0    |         1|
-|21    |system_rst_clk_wiz_0_50M_0       |         1|
-|22    |system_rst_system_150M_0         |         1|
-|23    |system_rst_vid_clk_dyn_0         |         1|
-|24    |system_v_axi4s_vid_out_0_0       |         1|
-|25    |system_v_demosaic_0_0            |         1|
-|26    |system_v_proc_ss_0_0             |         1|
-|27    |system_v_proc_ss_1_0             |         1|
-|28    |system_video_dynclk_0            |         1|
-|29    |system_vtg_0                     |         1|
+|4     |system_auto_pc_2                 |         1|
+|5     |system_s00_regslice_0            |         1|
+|6     |system_xbar_5                    |         1|
+|7     |system_DVIClocking_0_0           |         1|
+|8     |system_axi_cama_bta_0            |         1|
+|9     |system_axi_cama_gpio_0           |         1|
+|10    |system_axi_gpio_0_0              |         1|
+|11    |system_axi_iic_0_0               |         1|
+|12    |system_axi_vdma_a_0              |         1|
+|13    |system_axis_subset_converter_0_2 |         1|
+|14    |system_clk_wiz_0_0               |         1|
+|15    |system_mipi_csi2_rx_subsyst_0_0  |         1|
+|16    |system_processing_system7_0_0    |         1|
+|17    |system_rst_clk_wiz_0_50M_0       |         1|
+|18    |system_rst_system_150M_0         |         1|
+|19    |system_rst_vid_clk_dyn_0         |         1|
+|20    |system_v_axi4s_vid_out_0_0       |         1|
+|21    |system_video_dynclk_0            |         1|
+|22    |system_vtg_0                     |         1|
 +------+---------------------------------+----------+
 
 Report Cell Usage: 
@@ -784,61 +742,54 @@ Report Cell Usage:
 |      |Cell                                  |Count |
 +------+--------------------------------------+------+
 |1     |system_DVIClocking_0_0_bbox           |     1|
-|2     |system_auto_cc_0_bbox                 |     1|
-|3     |system_auto_cc_1_bbox                 |     1|
-|4     |system_auto_cc_2_bbox                 |     1|
-|5     |system_auto_pc_0_bbox                 |     1|
-|6     |system_auto_pc_1_bbox                 |     1|
-|7     |system_auto_pc_2_bbox                 |     1|
-|8     |system_axi_cama_bta_0_bbox            |     1|
-|9     |system_axi_cama_gpio_0_bbox           |     1|
-|10    |system_axi_gpio_0_0_bbox              |     1|
-|11    |system_axi_iic_0_0_bbox               |     1|
-|12    |system_axi_vdma_a_0_bbox              |     1|
-|13    |system_axis_subset_converter_0_1_bbox |     1|
-|14    |system_axis_subset_converter_0_2_bbox |     1|
-|15    |system_clk_wiz_0_0_bbox               |     1|
-|16    |system_mipi_csi2_rx_subsyst_0_0_bbox  |     1|
-|17    |system_processing_system7_0_0_bbox    |     1|
-|18    |system_rst_clk_wiz_0_50M_0_bbox       |     1|
-|19    |system_rst_system_150M_0_bbox         |     1|
-|20    |system_rst_vid_clk_dyn_0_bbox         |     1|
-|21    |system_s00_regslice_0_bbox            |     1|
-|22    |system_v_axi4s_vid_out_0_0_bbox       |     1|
-|23    |system_v_demosaic_0_0_bbox            |     1|
-|24    |system_v_proc_ss_0_0_bbox             |     1|
-|25    |system_v_proc_ss_1_0_bbox             |     1|
-|26    |system_video_dynclk_0_bbox            |     1|
-|27    |system_vtg_0_bbox                     |     1|
-|28    |system_xbar_4_bbox                    |     1|
-|29    |system_xbar_5_bbox                    |     1|
-|30    |IBUF                                  |    19|
-|31    |IOBUF                                 |    14|
-|32    |OBUF                                  |    22|
+|2     |system_auto_pc_0_bbox                 |     1|
+|3     |system_auto_pc_1_bbox                 |     1|
+|4     |system_auto_pc_2_bbox                 |     1|
+|5     |system_axi_cama_bta_0_bbox            |     1|
+|6     |system_axi_cama_gpio_0_bbox           |     1|
+|7     |system_axi_gpio_0_0_bbox              |     1|
+|8     |system_axi_iic_0_0_bbox               |     1|
+|9     |system_axi_vdma_a_0_bbox              |     1|
+|10    |system_axis_subset_converter_0_2_bbox |     1|
+|11    |system_clk_wiz_0_0_bbox               |     1|
+|12    |system_mipi_csi2_rx_subsyst_0_0_bbox  |     1|
+|13    |system_processing_system7_0_0_bbox    |     1|
+|14    |system_rst_clk_wiz_0_50M_0_bbox       |     1|
+|15    |system_rst_system_150M_0_bbox         |     1|
+|16    |system_rst_vid_clk_dyn_0_bbox         |     1|
+|17    |system_s00_regslice_0_bbox            |     1|
+|18    |system_v_axi4s_vid_out_0_0_bbox       |     1|
+|19    |system_video_dynclk_0_bbox            |     1|
+|20    |system_vtg_0_bbox                     |     1|
+|21    |system_xbar_4_bbox                    |     1|
+|22    |system_xbar_5_bbox                    |     1|
+|23    |IBUF                                  |    19|
+|24    |IOBUF                                 |    14|
+|25    |OBUF                                  |    22|
 +------+--------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1070.066 ; gain = 56.613
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1036.156 ; gain = 22.336
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1070.066 ; gain = 0.000
-Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1070.066 ; gain = 56.613
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1036.156 ; gain = 3.137
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1036.156 ; gain = 22.336
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1070.066 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1036.156 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1070.066 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1053.066 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 14 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 14 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-160 Infos, 18 Warnings, 1 Critical Warnings and 0 Errors encountered.
+146 Infos, 18 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1070.066 ; gain = 56.613
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1053.066 ; gain = 39.246
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/zfsalti/488/MP-2/MP2.xpr/MP2/MP2.runs/synth_1/system_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file system_wrapper_utilization_synth.rpt -pb system_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Mar  9 03:21:06 2026...
+INFO: [Common 17-206] Exiting Vivado at Wed Apr  8 12:52:13 2026...
